@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "typeKind": "enum",
+  "name": "game_state",
+  "displayName": "GameState",
+  "description": "Represents the current state of the game",
+  "variants": [
+    {
+      "name": "MainMenu",
+      "doc": "Main menu screen"
+    },
+    {
+      "name": "Loading",
+      "doc": "Loading assets and resources"
+    },
+    {
+      "name": "Playing",
+      "doc": "Active gameplay"
+    },
+    {
+      "name": "Paused",
+      "doc": "Game is paused"
+    },
+    {
+      "name": "GameOver",
+      "doc": "Game over screen"
+    }
+  ],
+  "visibility": "public",
+  "meta": {}
+}

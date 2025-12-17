@@ -1,2 +1,2 @@
 # Template-Blank
-A template for the "blank" project in the Pulsar game engine
+A template for the "blank" project n the Pulsar game engine

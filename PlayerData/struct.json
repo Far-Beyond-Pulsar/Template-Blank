@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "typeKind": "struct",
+  "name": "player_data",
+  "displayName": "PlayerData",
+  "description": "Contains player state and statistics",
+  "fields": [
+    {
+      "name": "player_name",
+      "type": {
+        "kind": "Primitive",
+        "name": "String"
+      },
+      "visibility": "public",
+      "doc": "The player's username"
+    },
+    {
+      "name": "health",
+      "type": {
+        "kind": "Primitive",
+        "name": "f32"
+      },
+      "visibility": "public",
+      "doc": "Current health points"
+    },
+    {
+      "name": "max_health",
+      "type": {
+        "kind": "Primitive",
+        "name": "f32"
+      },
+      "visibility": "public",
+      "doc": "Maximum health points"
+    },
+    {
+      "name": "level",
+      "type": {
+        "kind": "Primitive",
+        "name": "u32"
+      },
+      "visibility": "public",
+      "doc": "Player's current level"
+    },
+    {
+      "name": "position",
+      "type": {
+        "kind": "Path",
+        "path": "Vec3"
+      },
+      "visibility": "public",
+      "doc": "Player's position in world space"
+    }
+  ],
+  "visibility": "public",
+  "meta": {}
+}

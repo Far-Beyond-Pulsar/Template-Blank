@@ -2,15 +2,28 @@
   "version": 1,
   "name": "Demo Music Project",
   "created_at": "2024-01-15T10:30:00Z",
-  "modified_at": "2024-01-15T10:30:00Z",
+  "modified_at": "2025-11-25T05:25:49.538540300+00:00",
   "sample_rate": 48000.0,
   "tracks": [
     {
       "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
       "name": "Drums",
       "track_type": "Audio",
-      "clips": [],
-      "volume": 1.0,
+      "clips": [
+        {
+          "id": "a39b31ef-df20-4e51-8acd-57606817f2bd",
+          "name": "file_example_WAV_10MG",
+          "asset_path": "C:\\Users\\redst\\OneDrive\\Documents\\Pulsar_Projects\\blank_project\\src\\assets\\audio\\audio\\file_example_WAV_10MG.wav",
+          "start_time": 0,
+          "duration": 2869103,
+          "offset": 0,
+          "fade_in": 0,
+          "fade_out": 0,
+          "gain": 1.0,
+          "muted": false
+        }
+      ],
+      "volume": 0.80999994,
       "pan": 0.0,
       "muted": false,
       "solo": false,
@@ -66,14 +79,31 @@
         }
       ],
       "automation": [],
-      "color": [0.9, 0.3, 0.3]
+      "color": [
+        0.9,
+        0.3,
+        0.3
+      ]
     },
     {
       "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
       "name": "Bass",
       "track_type": "Audio",
-      "clips": [],
-      "volume": 1.0,
+      "clips": [
+        {
+          "id": "71117c13-0782-49cc-a026-50bcfeec26ca",
+          "name": "file_example_WAV_1MG",
+          "asset_path": "C:\\Users\\redst\\OneDrive\\Documents\\Pulsar_Projects\\blank_project\\src\\assets\\audio\\audio\\file_example_WAV_1MG.wav",
+          "start_time": 576000,
+          "duration": 285273,
+          "offset": 0,
+          "fade_in": 0,
+          "fade_out": 0,
+          "gain": 1.0,
+          "muted": false
+        }
+      ],
+      "volume": 1.5,
       "pan": 0.0,
       "muted": false,
       "solo": false,
@@ -129,7 +159,11 @@
         }
       ],
       "automation": [],
-      "color": [0.3, 0.9, 0.3]
+      "color": [
+        0.3,
+        0.9,
+        0.3
+      ]
     },
     {
       "id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
@@ -192,7 +226,11 @@
         }
       ],
       "automation": [],
-      "color": [0.3, 0.3, 0.9]
+      "color": [
+        0.3,
+        0.3,
+        0.9
+      ]
     },
     {
       "id": "d4e5f6a7-b8c9-0123-def1-234567890123",
@@ -255,7 +293,11 @@
         }
       ],
       "automation": [],
-      "color": [0.7, 0.7, 0.3]
+      "color": [
+        0.7,
+        0.7,
+        0.3
+      ]
     }
   ],
   "transport": {
@@ -274,7 +316,7 @@
     "name": "Master",
     "track_type": "Master",
     "clips": [],
-    "volume": 1.0,
+    "volume": 1.5,
     "pan": 0.0,
     "muted": false,
     "solo": false,
@@ -330,6 +372,10 @@
       }
     ],
     "automation": [],
-    "color": [0.5, 0.5, 0.5]
+    "color": [
+      0.5,
+      0.5,
+      0.5
+    ]
   }
 }
