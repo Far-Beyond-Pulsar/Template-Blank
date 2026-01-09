@@ -7,36 +7,22 @@
   "variants": [
     {
       "name": "MainMenu",
-      "payload": [
-        {
-          "name": "field1",
-          "type": {
-            "kind": "Primitive",
-            "name": "String"
-          },
-          "visibility": "public"
-        }
-      ],
       "doc": "Main menu screen"
     },
     {
       "name": "Loading",
-      "payload": null,
       "doc": "Loading assets and resources"
     },
     {
       "name": "Playing",
-      "payload": null,
       "doc": "Active gameplay"
     },
     {
       "name": "Paused",
-      "payload": null,
       "doc": "Game is paused"
     },
     {
       "name": "GameOver",
-      "payload": null,
       "doc": "Game over screen"
     }
   ],

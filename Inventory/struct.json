@@ -6,7 +6,7 @@
   "description": "Player inventory system",
   "fields": [
     {
-      "name": "item",
+      "name": "items",
       "type": {
         "kind": "Path",
         "path": "Vec<Item>"

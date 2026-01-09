@@ -8,22 +8,7 @@
     {
       "name": "draw",
       "signature": {
-        "params": [
-          {
-            "name": "param1",
-            "type": {
-              "kind": "Primitive",
-              "name": "String"
-            }
-          },
-          {
-            "name": "param2",
-            "type": {
-              "kind": "Primitive",
-              "name": "String"
-            }
-          }
-        ],
+        "params": [],
         "return": {
           "kind": "Primitive",
           "name": "()"
