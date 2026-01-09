@@ -1,0 +1,1468 @@
+{
+  "name": "Combat Arena - Multi-Level",
+  "game_objects": [
+    {
+      "id": 1,
+      "name": "Main Floor",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, -0.5, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [60.0, 1.0, 60.0]
+      },
+      "material": {
+        "color": [0.25, 0.25, 0.28, 1.0],
+        "roughness": 0.8
+      }
+    },
+    {
+      "id": 2,
+      "name": "Central Platform Lower",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 1.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [12.0, 0.5, 12.0]
+      },
+      "material": {
+        "color": [0.4, 0.4, 0.45, 1.0],
+        "metallic": 0.2
+      }
+    },
+    {
+      "id": 3,
+      "name": "Central Platform Mid",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 3.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [8.0, 0.4, 8.0]
+      },
+      "material": {
+        "color": [0.45, 0.45, 0.5, 1.0],
+        "metallic": 0.3
+      }
+    },
+    {
+      "id": 4,
+      "name": "Central Pillar",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [0.0, 2.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [1.0, 2.0, 1.0]
+      },
+      "material": {
+        "color": [0.3, 0.3, 0.35, 1.0],
+        "metallic": 0.4
+      }
+    },
+    {
+      "id": 5,
+      "name": "Ramp North to Platform",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 0.5, -8.0],
+        "rotation": [0.349066, 0.0, 0.0],
+        "scale": [6.0, 0.3, 4.0]
+      },
+      "material": {
+        "color": [0.35, 0.35, 0.4, 1.0]
+      }
+    },
+    {
+      "id": 6,
+      "name": "Ramp South to Platform",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 0.5, 8.0],
+        "rotation": [-0.349066, 0.0, 0.0],
+        "scale": [6.0, 0.3, 4.0]
+      },
+      "material": {
+        "color": [0.35, 0.35, 0.4, 1.0]
+      }
+    },
+    {
+      "id": 7,
+      "name": "Ramp East to Platform",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [8.0, 0.5, 0.0],
+        "rotation": [0.0, 0.0, -0.349066],
+        "scale": [4.0, 0.3, 6.0]
+      },
+      "material": {
+        "color": [0.35, 0.35, 0.4, 1.0]
+      }
+    },
+    {
+      "id": 8,
+      "name": "Ramp West to Platform",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-8.0, 0.5, 0.0],
+        "rotation": [0.0, 0.0, 0.349066],
+        "scale": [4.0, 0.3, 6.0]
+      },
+      "material": {
+        "color": [0.35, 0.35, 0.4, 1.0]
+      }
+    },
+    {
+      "id": 9,
+      "name": "Tower NE Base",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [22.0, 2.5, -22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [6.0, 5.0, 6.0]
+      },
+      "material": {
+        "color": [0.28, 0.28, 0.32, 1.0]
+      }
+    },
+    {
+      "id": 10,
+      "name": "Tower NW Base",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-22.0, 2.5, -22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [6.0, 5.0, 6.0]
+      },
+      "material": {
+        "color": [0.28, 0.28, 0.32, 1.0]
+      }
+    },
+    {
+      "id": 11,
+      "name": "Tower SE Base",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [22.0, 2.5, 22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [6.0, 5.0, 6.0]
+      },
+      "material": {
+        "color": [0.28, 0.28, 0.32, 1.0]
+      }
+    },
+    {
+      "id": 12,
+      "name": "Tower SW Base",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-22.0, 2.5, 22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [6.0, 5.0, 6.0]
+      },
+      "material": {
+        "color": [0.28, 0.28, 0.32, 1.0]
+      }
+    },
+    {
+      "id": 13,
+      "name": "Tower Platform NE",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [22.0, 5.5, -22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [8.0, 0.4, 8.0]
+      },
+      "material": {
+        "color": [0.5, 0.45, 0.4, 1.0],
+        "metallic": 0.2
+      }
+    },
+    {
+      "id": 14,
+      "name": "Tower Platform NW",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-22.0, 5.5, -22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [8.0, 0.4, 8.0]
+      },
+      "material": {
+        "color": [0.5, 0.45, 0.4, 1.0],
+        "metallic": 0.2
+      }
+    },
+    {
+      "id": 15,
+      "name": "Tower Platform SE",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [22.0, 5.5, 22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [8.0, 0.4, 8.0]
+      },
+      "material": {
+        "color": [0.5, 0.45, 0.4, 1.0],
+        "metallic": 0.2
+      }
+    },
+    {
+      "id": 16,
+      "name": "Tower Platform SW",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-22.0, 5.5, 22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [8.0, 0.4, 8.0]
+      },
+      "material": {
+        "color": [0.5, 0.45, 0.4, 1.0],
+        "metallic": 0.2
+      }
+    },
+    {
+      "id": 17,
+      "name": "Catwalk North",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 6.0, -22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [32.0, 0.3, 3.0]
+      },
+      "material": {
+        "color": [0.4, 0.35, 0.3, 1.0],
+        "metallic": 0.5
+      }
+    },
+    {
+      "id": 18,
+      "name": "Catwalk South",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 6.0, 22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [32.0, 0.3, 3.0]
+      },
+      "material": {
+        "color": [0.4, 0.35, 0.3, 1.0],
+        "metallic": 0.5
+      }
+    },
+    {
+      "id": 19,
+      "name": "Catwalk East",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [22.0, 6.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [3.0, 0.3, 32.0]
+      },
+      "material": {
+        "color": [0.4, 0.35, 0.3, 1.0],
+        "metallic": 0.5
+      }
+    },
+    {
+      "id": 20,
+      "name": "Catwalk West",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-22.0, 6.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [3.0, 0.3, 32.0]
+      },
+      "material": {
+        "color": [0.4, 0.35, 0.3, 1.0],
+        "metallic": 0.5
+      }
+    },
+    {
+      "id": 21,
+      "name": "Catwalk Rail North Left",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 7.0, -23.2],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [32.0, 0.15, 0.15]
+      },
+      "material": {
+        "color": [0.3, 0.3, 0.35, 1.0],
+        "metallic": 0.7
+      }
+    },
+    {
+      "id": 22,
+      "name": "Catwalk Rail North Right",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 7.0, -20.8],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [32.0, 0.15, 0.15]
+      },
+      "material": {
+        "color": [0.3, 0.3, 0.35, 1.0],
+        "metallic": 0.7
+      }
+    },
+    {
+      "id": 23,
+      "name": "Mid Platform North",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 3.5, -15.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [8.0, 0.4, 6.0]
+      },
+      "material": {
+        "color": [0.45, 0.4, 0.38, 1.0]
+      }
+    },
+    {
+      "id": 24,
+      "name": "Mid Platform South",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 3.5, 15.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [8.0, 0.4, 6.0]
+      },
+      "material": {
+        "color": [0.45, 0.4, 0.38, 1.0]
+      }
+    },
+    {
+      "id": 25,
+      "name": "Mid Platform East",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [15.0, 3.5, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [6.0, 0.4, 8.0]
+      },
+      "material": {
+        "color": [0.45, 0.4, 0.38, 1.0]
+      }
+    },
+    {
+      "id": 26,
+      "name": "Mid Platform West",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-15.0, 3.5, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [6.0, 0.4, 8.0]
+      },
+      "material": {
+        "color": [0.45, 0.4, 0.38, 1.0]
+      }
+    },
+    {
+      "id": 27,
+      "name": "Stairs to Mid North",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 2.0, -11.5],
+        "rotation": [0.523599, 0.0, 0.0],
+        "scale": [4.0, 0.3, 3.0]
+      },
+      "material": {
+        "color": [0.38, 0.38, 0.42, 1.0]
+      }
+    },
+    {
+      "id": 28,
+      "name": "Stairs to Mid South",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 2.0, 11.5],
+        "rotation": [-0.523599, 0.0, 0.0],
+        "scale": [4.0, 0.3, 3.0]
+      },
+      "material": {
+        "color": [0.38, 0.38, 0.42, 1.0]
+      }
+    },
+    {
+      "id": 29,
+      "name": "Stairs to Mid East",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [11.5, 2.0, 0.0],
+        "rotation": [0.0, 0.0, -0.523599],
+        "scale": [3.0, 0.3, 4.0]
+      },
+      "material": {
+        "color": [0.38, 0.38, 0.42, 1.0]
+      }
+    },
+    {
+      "id": 30,
+      "name": "Stairs to Mid West",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-11.5, 2.0, 0.0],
+        "rotation": [0.0, 0.0, 0.523599],
+        "scale": [3.0, 0.3, 4.0]
+      },
+      "material": {
+        "color": [0.38, 0.38, 0.42, 1.0]
+      }
+    },
+    {
+      "id": 31,
+      "name": "Tunnel North Entry Floor",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 0.0, -28.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [6.0, 0.3, 4.0]
+      },
+      "material": {
+        "color": [0.3, 0.3, 0.35, 1.0]
+      }
+    },
+    {
+      "id": 32,
+      "name": "Tunnel North Left Wall",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-3.0, 2.0, -28.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.3, 4.0, 4.0]
+      },
+      "material": {
+        "color": [0.25, 0.25, 0.28, 1.0]
+      }
+    },
+    {
+      "id": 33,
+      "name": "Tunnel North Right Wall",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [3.0, 2.0, -28.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.3, 4.0, 4.0]
+      },
+      "material": {
+        "color": [0.25, 0.25, 0.28, 1.0]
+      }
+    },
+    {
+      "id": 34,
+      "name": "Tunnel North Ceiling",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 4.0, -28.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [6.0, 0.3, 4.0]
+      },
+      "material": {
+        "color": [0.22, 0.22, 0.25, 1.0]
+      }
+    },
+    {
+      "id": 35,
+      "name": "Tunnel South Entry Floor",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 0.0, 28.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [6.0, 0.3, 4.0]
+      },
+      "material": {
+        "color": [0.3, 0.3, 0.35, 1.0]
+      }
+    },
+    {
+      "id": 36,
+      "name": "Tunnel South Left Wall",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-3.0, 2.0, 28.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.3, 4.0, 4.0]
+      },
+      "material": {
+        "color": [0.25, 0.25, 0.28, 1.0]
+      }
+    },
+    {
+      "id": 37,
+      "name": "Tunnel South Right Wall",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [3.0, 2.0, 28.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.3, 4.0, 4.0]
+      },
+      "material": {
+        "color": [0.25, 0.25, 0.28, 1.0]
+      }
+    },
+    {
+      "id": 38,
+      "name": "Tunnel South Ceiling",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 4.0, 28.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [6.0, 0.3, 4.0]
+      },
+      "material": {
+        "color": [0.22, 0.22, 0.25, 1.0]
+      }
+    },
+    {
+      "id": 39,
+      "name": "Outer Wall North",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 4.0, -30.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [60.0, 8.0, 0.5]
+      },
+      "material": {
+        "color": [0.28, 0.28, 0.32, 1.0],
+        "roughness": 0.9
+      }
+    },
+    {
+      "id": 40,
+      "name": "Outer Wall South",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 4.0, 30.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [60.0, 8.0, 0.5]
+      },
+      "material": {
+        "color": [0.28, 0.28, 0.32, 1.0],
+        "roughness": 0.9
+      }
+    },
+    {
+      "id": 41,
+      "name": "Outer Wall East",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [30.0, 4.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.5, 8.0, 60.0]
+      },
+      "material": {
+        "color": [0.28, 0.28, 0.32, 1.0],
+        "roughness": 0.9
+      }
+    },
+    {
+      "id": 42,
+      "name": "Outer Wall West",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-30.0, 4.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.5, 8.0, 60.0]
+      },
+      "material": {
+        "color": [0.28, 0.28, 0.32, 1.0],
+        "roughness": 0.9
+      }
+    },
+    {
+      "id": 43,
+      "name": "Tower Spire NE",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [22.0, 8.0, -22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [1.5, 3.0, 1.5]
+      },
+      "material": {
+        "color": [0.35, 0.32, 0.3, 1.0],
+        "metallic": 0.3
+      }
+    },
+    {
+      "id": 44,
+      "name": "Tower Spire NW",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [-22.0, 8.0, -22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [1.5, 3.0, 1.5]
+      },
+      "material": {
+        "color": [0.35, 0.32, 0.3, 1.0],
+        "metallic": 0.3
+      }
+    },
+    {
+      "id": 45,
+      "name": "Tower Spire SE",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [22.0, 8.0, 22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [1.5, 3.0, 1.5]
+      },
+      "material": {
+        "color": [0.35, 0.32, 0.3, 1.0],
+        "metallic": 0.3
+      }
+    },
+    {
+      "id": 46,
+      "name": "Tower Spire SW",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [-22.0, 8.0, 22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [1.5, 3.0, 1.5]
+      },
+      "material": {
+        "color": [0.35, 0.32, 0.3, 1.0],
+        "metallic": 0.3
+      }
+    },
+    {
+      "id": 47,
+      "name": "Cover Block North 1",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-8.0, 0.8, -5.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [2.0, 1.6, 2.0]
+      },
+      "material": {
+        "color": [0.35, 0.32, 0.3, 1.0]
+      }
+    },
+    {
+      "id": 48,
+      "name": "Cover Block North 2",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [8.0, 0.8, -5.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [2.0, 1.6, 2.0]
+      },
+      "material": {
+        "color": [0.35, 0.32, 0.3, 1.0]
+      }
+    },
+    {
+      "id": 49,
+      "name": "Cover Block South 1",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-8.0, 0.8, 5.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [2.0, 1.6, 2.0]
+      },
+      "material": {
+        "color": [0.35, 0.32, 0.3, 1.0]
+      }
+    },
+    {
+      "id": 50,
+      "name": "Cover Block South 2",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [8.0, 0.8, 5.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [2.0, 1.6, 2.0]
+      },
+      "material": {
+        "color": [0.35, 0.32, 0.3, 1.0]
+      }
+    },
+    {
+      "id": 51,
+      "name": "Ambient Light NE",
+      "mesh_type": "Sphere",
+      "transform": {
+        "position": [20.0, 7.0, -20.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.6, 0.6, 0.6]
+      },
+      "material": {
+        "color": [1.0, 0.8, 0.4, 1.0],
+        "emissive": [0.8, 0.6, 0.2]
+      }
+    },
+    {
+      "id": 52,
+      "name": "Ambient Light NW",
+      "mesh_type": "Sphere",
+      "transform": {
+        "position": [-20.0, 7.0, -20.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.6, 0.6, 0.6]
+      },
+      "material": {
+        "color": [1.0, 0.8, 0.4, 1.0],
+        "emissive": [0.8, 0.6, 0.2]
+      }
+    },
+    {
+      "id": 53,
+      "name": "Ambient Light SE",
+      "mesh_type": "Sphere",
+      "transform": {
+        "position": [20.0, 7.0, 20.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.6, 0.6, 0.6]
+      },
+      "material": {
+        "color": [1.0, 0.8, 0.4, 1.0],
+        "emissive": [0.8, 0.6, 0.2]
+      }
+    },
+    {
+      "id": 54,
+      "name": "Ambient Light SW",
+      "mesh_type": "Sphere",
+      "transform": {
+        "position": [-20.0, 7.0, 20.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.6, 0.6, 0.6]
+      },
+      "material": {
+        "color": [1.0, 0.8, 0.4, 1.0],
+        "emissive": [0.8, 0.6, 0.2]
+      }
+    },
+    {
+      "id": 55,
+      "name": "Bridge North to Tower NE",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [11.0, 5.5, -22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [14.0, 0.3, 2.5]
+      },
+      "material": {
+        "color": [0.42, 0.38, 0.35, 1.0],
+        "metallic": 0.3
+      }
+    },
+    {
+      "id": 56,
+      "name": "Bridge North to Tower NW",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-11.0, 5.5, -22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [14.0, 0.3, 2.5]
+      },
+      "material": {
+        "color": [0.42, 0.38, 0.35, 1.0],
+        "metallic": 0.3
+      }
+    }
+  ]
+}
+    {
+      "id": 1,
+      "name": "Main Floor",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 0.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [30.0, 0.5, 30.0]
+      },
+      "material": {
+        "color": [0.4, 0.4, 0.45, 1.0]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Central Platform",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 2.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [8.0, 0.3, 8.0]
+      },
+      "material": {
+        "color": [0.5, 0.5, 0.6, 1.0]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Central Pillar",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [0.0, 1.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [1.5, 2.0, 1.5]
+      },
+      "material": {
+        "color": [0.35, 0.35, 0.4, 1.0]
+      }
+    },
+    {
+      "id": 4,
+      "name": "North Platform",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 1.5, -12.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [6.0, 0.3, 6.0]
+      },
+      "material": {
+        "color": [0.5, 0.5, 0.6, 1.0]
+      }
+    },
+    {
+      "id": 5,
+      "name": "South Platform",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 1.5, 12.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [6.0, 0.3, 6.0]
+      },
+      "material": {
+        "color": [0.5, 0.5, 0.6, 1.0]
+      }
+    },
+    {
+      "id": 6,
+      "name": "East Platform",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [12.0, 1.5, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [6.0, 0.3, 6.0]
+      },
+      "material": {
+        "color": [0.5, 0.5, 0.6, 1.0]
+      }
+    },
+    {
+      "id": 7,
+      "name": "West Platform",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-12.0, 1.5, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [6.0, 0.3, 6.0]
+      },
+      "material": {
+        "color": [0.5, 0.5, 0.6, 1.0]
+      }
+    },
+    {
+      "id": 8,
+      "name": "North Ramp",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 0.75, -6.0],
+        "rotation": [0.0, 0.0, 0.349066],
+        "scale": [4.0, 0.2, 6.0]
+      },
+      "material": {
+        "color": [0.45, 0.45, 0.5, 1.0]
+      }
+    },
+    {
+      "id": 9,
+      "name": "South Ramp",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 0.75, 6.0],
+        "rotation": [0.0, 0.0, -0.349066],
+        "scale": [4.0, 0.2, 6.0]
+      },
+      "material": {
+        "color": [0.45, 0.45, 0.5, 1.0]
+      }
+    },
+    {
+      "id": 10,
+      "name": "East Ramp",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [6.0, 0.75, 0.0],
+        "rotation": [0.349066, 0.0, 0.0],
+        "scale": [6.0, 0.2, 4.0]
+      },
+      "material": {
+        "color": [0.45, 0.45, 0.5, 1.0]
+      }
+    },
+    {
+      "id": 11,
+      "name": "West Ramp",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-6.0, 0.75, 0.0],
+        "rotation": [-0.349066, 0.0, 0.0],
+        "scale": [6.0, 0.2, 4.0]
+      },
+      "material": {
+        "color": [0.45, 0.45, 0.5, 1.0]
+      }
+    },
+    {
+      "id": 12,
+      "name": "NE Corner Platform",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [10.0, 0.8, -10.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [2.0, 0.3, 2.0]
+      },
+      "material": {
+        "color": [0.55, 0.55, 0.65, 1.0]
+      }
+    },
+    {
+      "id": 13,
+      "name": "NW Corner Platform",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [-10.0, 0.8, -10.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [2.0, 0.3, 2.0]
+      },
+      "material": {
+        "color": [0.55, 0.55, 0.65, 1.0]
+      }
+    },
+    {
+      "id": 14,
+      "name": "SE Corner Platform",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [10.0, 0.8, 10.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [2.0, 0.3, 2.0]
+      },
+      "material": {
+        "color": [0.55, 0.55, 0.65, 1.0]
+      }
+    },
+    {
+      "id": 15,
+      "name": "SW Corner Platform",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [-10.0, 0.8, 10.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [2.0, 0.3, 2.0]
+      },
+      "material": {
+        "color": [0.55, 0.55, 0.65, 1.0]
+      }
+    },
+    {
+      "id": 16,
+      "name": "North Wall Segment 1",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-10.0, 1.5, -14.5],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [5.0, 3.0, 0.5]
+      },
+      "material": {
+        "color": [0.35, 0.35, 0.4, 1.0]
+      }
+    },
+    {
+      "id": 17,
+      "name": "North Wall Segment 2",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [10.0, 1.5, -14.5],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [5.0, 3.0, 0.5]
+      },
+      "material": {
+        "color": [0.35, 0.35, 0.4, 1.0]
+      }
+    },
+    {
+      "id": 18,
+      "name": "South Wall Segment 1",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-10.0, 1.5, 14.5],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [5.0, 3.0, 0.5]
+      },
+      "material": {
+        "color": [0.35, 0.35, 0.4, 1.0]
+      }
+    },
+    {
+      "id": 19,
+      "name": "South Wall Segment 2",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [10.0, 1.5, 14.5],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [5.0, 3.0, 0.5]
+      },
+      "material": {
+        "color": [0.35, 0.35, 0.4, 1.0]
+      }
+    },
+    {
+      "id": 20,
+      "name": "East Wall Segment 1",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [14.5, 1.5, -10.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.5, 3.0, 5.0]
+      },
+      "material": {
+        "color": [0.35, 0.35, 0.4, 1.0]
+      }
+    },
+    {
+      "id": 21,
+      "name": "East Wall Segment 2",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [14.5, 1.5, 10.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.5, 3.0, 5.0]
+      },
+      "material": {
+        "color": [0.35, 0.35, 0.4, 1.0]
+      }
+    },
+    {
+      "id": 22,
+      "name": "West Wall Segment 1",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-14.5, 1.5, -10.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.5, 3.0, 5.0]
+      },
+      "material": {
+        "color": [0.35, 0.35, 0.4, 1.0]
+      }
+    },
+    {
+      "id": 23,
+      "name": "West Wall Segment 2",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-14.5, 1.5, 10.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.5, 3.0, 5.0]
+      },
+      "material": {
+        "color": [0.35, 0.35, 0.4, 1.0]
+      }
+    },
+    {
+      "id": 24,
+      "name": "Upper Platform NE",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [8.0, 3.5, -8.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [3.0, 0.3, 3.0]
+      },
+      "material": {
+        "color": [0.6, 0.5, 0.5, 1.0]
+      }
+    },
+    {
+      "id": 25,
+      "name": "Upper Platform NW",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-8.0, 3.5, -8.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [3.0, 0.3, 3.0]
+      },
+      "material": {
+        "color": [0.6, 0.5, 0.5, 1.0]
+      }
+    },
+    {
+      "id": 26,
+      "name": "Upper Platform SE",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [8.0, 3.5, 8.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [3.0, 0.3, 3.0]
+      },
+      "material": {
+        "color": [0.6, 0.5, 0.5, 1.0]
+      }
+    },
+    {
+      "id": 27,
+      "name": "Upper Platform SW",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-8.0, 3.5, 8.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [3.0, 0.3, 3.0]
+      },
+      "material": {
+        "color": [0.6, 0.5, 0.5, 1.0]
+      }
+    },
+    {
+      "id": 28,
+      "name": "Decorative Pillar NE",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [12.0, 2.0, -12.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.5, 4.0, 0.5]
+      },
+      "material": {
+        "color": [0.3, 0.3, 0.35, 1.0]
+      }
+    },
+    {
+      "id": 29,
+      "name": "Decorative Pillar NW",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [-12.0, 2.0, -12.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.5, 4.0, 0.5]
+      },
+      "material": {
+        "color": [0.3, 0.3, 0.35, 1.0]
+      }
+    },
+    {
+      "id": 30,
+      "name": "Decorative Pillar SE",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [12.0, 2.0, 12.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.5, 4.0, 0.5]
+      },
+      "material": {
+        "color": [0.3, 0.3, 0.35, 1.0]
+      }
+    },
+    {
+      "id": 31,
+      "name": "Decorative Pillar SW",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [-12.0, 2.0, 12.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.5, 4.0, 0.5]
+      },
+      "material": {
+        "color": [0.3, 0.3, 0.35, 1.0]
+      }
+    },
+    {
+      "id": 32,
+      "name": "Hallway North Entry",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 1.0, -18.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [4.0, 2.5, 6.0]
+      },
+      "material": {
+        "color": [0.38, 0.38, 0.42, 1.0]
+      }
+    },
+    {
+      "id": 33,
+      "name": "Hallway South Entry",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 1.0, 18.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [4.0, 2.5, 6.0]
+      },
+      "material": {
+        "color": [0.38, 0.38, 0.42, 1.0]
+      }
+    },
+    {
+      "id": 34,
+      "name": "Outer Wall North",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 2.5, -25.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [50.0, 5.0, 1.0]
+      },
+      "material": {
+        "color": [0.3, 0.3, 0.35, 1.0],
+        "roughness": 0.9
+      }
+    },
+    {
+      "id": 35,
+      "name": "Outer Wall South",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 2.5, 25.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [50.0, 5.0, 1.0]
+      },
+      "material": {
+        "color": [0.3, 0.3, 0.35, 1.0],
+        "roughness": 0.9
+      }
+    },
+    {
+      "id": 36,
+      "name": "Outer Wall East",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [25.0, 2.5, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [1.0, 5.0, 50.0]
+      },
+      "material": {
+        "color": [0.3, 0.3, 0.35, 1.0],
+        "roughness": 0.9
+      }
+    },
+    {
+      "id": 37,
+      "name": "Outer Wall West",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-25.0, 2.5, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [1.0, 5.0, 50.0]
+      },
+      "material": {
+        "color": [0.3, 0.3, 0.35, 1.0],
+        "roughness": 0.9
+      }
+    },
+    {
+      "id": 38,
+      "name": "Tower NE",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [20.0, 4.0, -20.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [2.5, 8.0, 2.5]
+      },
+      "material": {
+        "color": [0.28, 0.28, 0.32, 1.0],
+        "metallic": 0.1
+      }
+    },
+    {
+      "id": 39,
+      "name": "Tower NW",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [-20.0, 4.0, -20.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [2.5, 8.0, 2.5]
+      },
+      "material": {
+        "color": [0.28, 0.28, 0.32, 1.0],
+        "metallic": 0.1
+      }
+    },
+    {
+      "id": 40,
+      "name": "Tower SE",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [20.0, 4.0, 20.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [2.5, 8.0, 2.5]
+      },
+      "material": {
+        "color": [0.28, 0.28, 0.32, 1.0],
+        "metallic": 0.1
+      }
+    },
+    {
+      "id": 41,
+      "name": "Tower SW",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [-20.0, 4.0, 20.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [2.5, 8.0, 2.5]
+      },
+      "material": {
+        "color": [0.28, 0.28, 0.32, 1.0],
+        "metallic": 0.1
+      }
+    },
+    {
+      "id": 42,
+      "name": "Tower Top NE",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [20.0, 8.5, -20.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [3.0, 0.5, 3.0]
+      },
+      "material": {
+        "color": [0.5, 0.4, 0.35, 1.0],
+        "metallic": 0.3
+      }
+    },
+    {
+      "id": 43,
+      "name": "Tower Top NW",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [-20.0, 8.5, -20.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [3.0, 0.5, 3.0]
+      },
+      "material": {
+        "color": [0.5, 0.4, 0.35, 1.0],
+        "metallic": 0.3
+      }
+    },
+    {
+      "id": 44,
+      "name": "Tower Top SE",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [20.0, 8.5, 20.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [3.0, 0.5, 3.0]
+      },
+      "material": {
+        "color": [0.5, 0.4, 0.35, 1.0],
+        "metallic": 0.3
+      }
+    },
+    {
+      "id": 45,
+      "name": "Tower Top SW",
+      "mesh_type": "Cylinder",
+      "transform": {
+        "position": [-20.0, 8.5, 20.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [3.0, 0.5, 3.0]
+      },
+      "material": {
+        "color": [0.5, 0.4, 0.35, 1.0],
+        "metallic": 0.3
+      }
+    },
+    {
+      "id": 46,
+      "name": "Outer Platform North",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 1.0, -22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [8.0, 0.4, 4.0]
+      },
+      "material": {
+        "color": [0.45, 0.45, 0.5, 1.0]
+      }
+    },
+    {
+      "id": 47,
+      "name": "Outer Platform South",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [0.0, 1.0, 22.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [8.0, 0.4, 4.0]
+      },
+      "material": {
+        "color": [0.45, 0.45, 0.5, 1.0]
+      }
+    },
+    {
+      "id": 48,
+      "name": "Outer Platform East",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [22.0, 1.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [4.0, 0.4, 8.0]
+      },
+      "material": {
+        "color": [0.45, 0.45, 0.5, 1.0]
+      }
+    },
+    {
+      "id": 49,
+      "name": "Outer Platform West",
+      "mesh_type": "Cube",
+      "transform": {
+        "position": [-22.0, 1.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [4.0, 0.4, 8.0]
+      },
+      "material": {
+        "color": [0.45, 0.45, 0.5, 1.0]
+      }
+    },
+    {
+      "id": 50,
+      "name": "Accent Light NE",
+      "mesh_type": "Sphere",
+      "transform": {
+        "position": [18.0, 5.0, -18.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.8, 0.8, 0.8]
+      },
+      "material": {
+        "color": [0.9, 0.7, 0.3, 1.0],
+        "emissive": [0.5, 0.35, 0.15]
+      }
+    },
+    {
+      "id": 51,
+      "name": "Accent Light NW",
+      "mesh_type": "Sphere",
+      "transform": {
+        "position": [-18.0, 5.0, -18.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.8, 0.8, 0.8]
+      },
+      "material": {
+        "color": [0.9, 0.7, 0.3, 1.0],
+        "emissive": [0.5, 0.35, 0.15]
+      }
+    },
+    {
+      "id": 52,
+      "name": "Accent Light SE",
+      "mesh_type": "Sphere",
+      "transform": {
+        "position": [18.0, 5.0, 18.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.8, 0.8, 0.8]
+      },
+      "material": {
+        "color": [0.9, 0.7, 0.3, 1.0],
+        "emissive": [0.5, 0.35, 0.15]
+      }
+    },
+    {
+      "id": 53,
+      "name": "Accent Light SW",
+      "mesh_type": "Sphere",
+      "transform": {
+        "position": [-18.0, 5.0, 18.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.8, 0.8, 0.8]
+      },
+      "material": {
+        "color": [0.9, 0.7, 0.3, 1.0],
+        "emissive": [0.5, 0.35, 0.15]
+      }
+    }
+  ]
+}

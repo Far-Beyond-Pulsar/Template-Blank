@@ -11,4 +11,4 @@ categories = ["game-engines", "multimedia", "graphics"]
 readme = "README.md"
 
 [dependencies]
-pulsar_std = { path = "../crates/pulsar_std" }
+pulsar_std = { git = "https://github.com/Far-Beyond-Pulsar/Pulsar-Native", rev="e67992fcad90421ea1c748a28ef4085f16c064c5" }

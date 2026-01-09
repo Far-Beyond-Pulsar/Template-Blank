@@ -1,7 +1,7 @@
 [
   {
     "name": "dsfasdf",
-    "var_type": "(f32, f32, f32)",
+    "var_type": "Typed(TypeInfo { base_type: \"Typed(TypeInfo { base_type: \\\"Typed(TypeInfo { base_type: \\\\\\\"String\\\\\\\", wrappers: [], is_wildcard: false })\\\", wrappers: [], is_wildcard: false })\", wrappers: [], is_wildcard: false })",
     "default_value": null
   }
 ]

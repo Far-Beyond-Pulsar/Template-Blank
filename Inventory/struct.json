@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "typeKind": "struct",
+  "name": "inventory",
+  "displayName": "Inventory",
+  "description": "Player inventory system",
+  "fields": [
+    {
+      "name": "item",
+      "type": {
+        "kind": "Path",
+        "path": "Vec<Item>"
+      },
+      "visibility": "public",
+      "doc": "List of items in inventory"
+    },
+    {
+      "name": "capacity",
+      "type": {
+        "kind": "Primitive",
+        "name": "usize"
+      },
+      "visibility": "public",
+      "doc": "Maximum number of items"
+    },
+    {
+      "name": "gold",
+      "type": {
+        "kind": "Primitive",
+        "name": "u32"
+      },
+      "visibility": "public",
+      "doc": "Amount of currency"
+    }
+  ],
+  "visibility": "public",
+  "meta": {}
+}

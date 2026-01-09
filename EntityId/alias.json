@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "typeKind": "alias",
+  "name": "entity_id",
+  "displayName": "EntityId",
+  "description": "Unique identifier for game entities",
+  "ast": {
+    "nodeKind": "Constructor",
+    "name": "Option",
+    "params": [
+      {
+        "nodeKind": "Constructor",
+        "name": "Result",
+        "params": [
+          {
+            "nodeKind": "Primitive",
+            "name": "u64"
+          },
+          {
+            "nodeKind": "None",
+            "name": ""
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {}
+}

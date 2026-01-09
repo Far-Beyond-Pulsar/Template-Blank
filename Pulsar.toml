@@ -6,7 +6,7 @@
 name = "MyGame"                       # Name of your game project
 version = "0.1.0"                     # Project version
 author = "Your Name"                  # Author or studio name
-description = "A brief description."  # Short description of your game
+description = "A brief description."  # Svhort description of your game
 company = "Your Studio Name"          # Studio or company name
 license = "MIT"                       # License type (MIT, GPL, Proprietary, etc.)
 
@@ -44,7 +44,7 @@ move_right = "D"
 jump = "Space"
 crouch = "Ctrl"
 shoot = "Mouse1"
-aim = "Mouse2"
+aim = "Mouse2"
 
 [paths]
 assets = "assets/"

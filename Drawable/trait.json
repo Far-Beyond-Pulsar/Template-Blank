@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "typeKind": "trait",
+  "name": "drawable",
+  "displayName": "Drawable",
+  "description": "Trait for objects that can be rendered to the screen",
+  "methods": [
+    {
+      "name": "draw",
+      "signature": {
+        "params": [
+          {
+            "name": "param1",
+            "type": {
+              "kind": "Primitive",
+              "name": "String"
+            }
+          },
+          {
+            "name": "param2",
+            "type": {
+              "kind": "Primitive",
+              "name": "String"
+            }
+          }
+        ],
+        "return": {
+          "kind": "Primitive",
+          "name": "()"
+        }
+      },
+      "doc": "Renders the object to the screen"
+    },
+    {
+      "name": "is_visible",
+      "signature": {
+        "params": [],
+        "return": {
+          "kind": "Primitive",
+          "name": "bool"
+        }
+      },
+      "doc": "Returns whether the object should be drawn"
+    },
+    {
+      "name": "get_z_index",
+      "signature": {
+        "params": [],
+        "return": {
+          "kind": "Primitive",
+          "name": "i32"
+        }
+      },
+      "doc": "Returns the rendering layer depth"
+    }
+  ],
+  "meta": {}
+}
