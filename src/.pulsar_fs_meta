@@ -1,0 +1,20 @@
+{
+  "files": {
+    "classes": {
+      "color_override": {
+        "r": 79,
+        "g": 159,
+        "b": 255,
+        "a": 255
+      }
+    },
+    "assets": {
+      "color_override": {
+        "r": 80,
+        "g": 200,
+        "b": 119,
+        "a": 255
+      }
+    }
+  }
+}

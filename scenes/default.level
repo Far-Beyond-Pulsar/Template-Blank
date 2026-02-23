@@ -756,6 +756,23 @@
         "color": [0.42, 0.38, 0.35, 1.0],
         "metallic": 0.3
       }
+    },
+    {
+      "id": 57,
+      "name": "Spaceship",
+      "mesh_type": {
+        "file": "meshes/spaceship.obj"
+      },
+      "transform": {
+        "position": [0.0, 10.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.1, 0.1, 0.1]
+      },
+      "material": {
+        "color": [0.8, 0.8, 0.9, 1.0],
+        "metallic": 0.5,
+        "roughness": 0.4
+      }
     }
   ]
 }

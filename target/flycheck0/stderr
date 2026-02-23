@@ -1,13 +1,2 @@
-error: failed to get `pulsar_std` as a dependency of package `mygame v0.1.0 (C:\Users\redst\OneDrive\Documents\Pulsar_Projects\blank_project)`
-
-Caused by:
-  failed to load source for dependency `pulsar_std`
-
-Caused by:
-  Unable to update C:\Users\redst\OneDrive\Documents\Pulsar_Projects\crates\pulsar_std
-
-Caused by:
-  failed to read `C:\Users\redst\OneDrive\Documents\Pulsar_Projects\crates\pulsar_std\Cargo.toml`
-
-Caused by:
-  The system cannot find the path specified. (os error 3)
+error: 'cargo-clippy.exe' is not installed for the toolchain 'stable-x86_64-pc-windows-msvc'.
+To install, run `rustup component add clippy`

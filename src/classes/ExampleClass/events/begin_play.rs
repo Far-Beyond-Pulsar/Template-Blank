@@ -13,5 +13,7 @@ use pulsar_std::*;
 use super::super::vars::*;
 
 pub fn begin_play() {
-    let lua_runtime = Lua :: new () ; let output : Result < String > = lua_runtime . load (templateLua ()) . eval () ; return output . unwrap ()
+    let lua_runtime = Lua::new();
+    let output: Result<String> = lua_runtime.load(templateLua()).eval();
+    return output.unwrap();
 }
