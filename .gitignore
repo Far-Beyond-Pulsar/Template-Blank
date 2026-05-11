@@ -1,3 +1,6 @@
 /target
 target/.rustc_info.json
 /.pulsar
+GameState/.DS_Store
+.DS_Store
+/target

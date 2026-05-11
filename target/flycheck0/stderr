@@ -1,2 +1,33 @@
-error: 'cargo-clippy.exe' is not installed for the toolchain 'stable-x86_64-pc-windows-msvc'.
-To install, run `rustup component add clippy`
+   0.553986583s  INFO prepare_target{force=false package_id=blank_project v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="blank_project"}: cargo::core::compiler::fingerprint: stale: changed "/Users/tristanpoland/Documents/blank_project/src/main.rs"
+   0.554145541s  INFO prepare_target{force=false package_id=blank_project v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="blank_project"}: cargo::core::compiler::fingerprint:           (vs) "/Users/tristanpoland/Documents/blank_project/target/debug/.fingerprint/blank_project-15c99a4047ee8b8f/dep-bin-blank_project"
+   0.554150041s  INFO prepare_target{force=false package_id=blank_project v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="blank_project"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1778525318, nanos: 350041294 } < FileTime { seconds: 1778525389, nanos: 277202511 }
+   0.554725541s  INFO prepare_target{force=false package_id=blank_project v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="blank_project"}: cargo::core::compiler::fingerprint: fingerprint dirty for blank_project v0.1.0 (/Users/tristanpoland/Documents/blank_project)/Check { test: false }/TargetInner { name: "blank_project", doc: true, ..: with_path("/Users/tristanpoland/Documents/blank_project/src/main.rs", Edition2021) }
+   0.554748375s  INFO prepare_target{force=false package_id=blank_project v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="blank_project"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/tristanpoland/Documents/blank_project/target/debug/.fingerprint/blank_project-15c99a4047ee8b8f/dep-bin-blank_project", reference_mtime: FileTime { seconds: 1778525318, nanos: 350041294 }, stale: "/Users/tristanpoland/Documents/blank_project/src/main.rs", stale_mtime: FileTime { seconds: 1778525389, nanos: 277202511 } }))
+   0.617550333s  INFO prepare_target{force=false package_id=blank_project v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="blank_project"}: cargo::core::compiler::fingerprint: fingerprint error for blank_project v0.1.0 (/Users/tristanpoland/Documents/blank_project)/Check { test: true }/TargetInner { name: "blank_project", doc: true, ..: with_path("/Users/tristanpoland/Documents/blank_project/src/main.rs", Edition2021) }
+   0.617569083s  INFO prepare_target{force=false package_id=blank_project v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="blank_project"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/tristanpoland/Documents/blank_project/target/debug/.fingerprint/blank_project-dd3dce5056381dcc/test-bin-blank_project`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+    Checking blank_project v0.1.0 (/Users/tristanpoland/Documents/blank_project)
+error: could not compile `blank_project` (bin "blank_project" test) due to 12 previous errors; 4 warnings emitted
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `blank_project` (bin "blank_project") due to 12 previous errors; 4 warnings emitted

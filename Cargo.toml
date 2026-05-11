@@ -1,14 +1,12 @@
 [package]
-name = "mygame"
+name = "blank_project"
 version = "0.1.0"
-authors = ["Your Name <your.email@example.com>"]
 edition = "2021"
-description = "A brief description."
-license = "MIT"
-repository = ""
-keywords = ["game", "engine", "pulsar-native"]
-categories = ["game-engines", "multimedia", "graphics"]
-readme = "README.md"
+description = "Generated Pulsar game project: blank_project"
+
 
 [dependencies]
-pulsar_std = { git = "https://github.com/Far-Beyond-Pulsar/Pulsar-Native", rev="e67992fcad90421ea1c748a28ef4085f16c064c5" }
+pulsar_game = { git = "https://github.com/Far-Beyond-Pulsar/Pulsar-Native" }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
+helio = { git = "https://github.com/Far-Beyond-Pulsar/Helio" }
