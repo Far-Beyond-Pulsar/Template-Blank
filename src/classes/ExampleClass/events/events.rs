@@ -34,13 +34,12 @@ mod logic {
     // use pulsar_std::*;
 
 
+    pub fn begin_play() {
+    }
+
     pub fn main() {
         DSFASDF.with(|v| *v.borrow_mut() = DSFASDF.with(|v| v.borrow().clone()));
         if node_dcf02495_0e52_439e_8e2d_8c0d69a86ff9_result { let node_print_true_result = print_string ("Result is greater than 3! \u{2713}") ; } else { let node_print_false_result = print_string ("Result is 3 or less. \u{2717}") ; }
-    }
-
-    pub fn begin_play() {
-        let lua_runtime = Lua :: new () ; let output : Result < String > = lua_runtime . load (templateLua ()) . eval () ; return output . unwrap () ;
     }
 
 }

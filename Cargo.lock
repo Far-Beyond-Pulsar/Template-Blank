@@ -259,16 +259,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "812e12b5285cc515a9c72a5c1d3b6d46a19dac5acfef5265968c166106e31dd3"
 
 [[package]]
-name = "blank_project"
-version = "0.1.0"
-dependencies = [
- "helio",
- "pulsar_game",
- "tracing",
- "tracing-subscriber",
-]
-
-[[package]]
 name = "block2"
 version = "0.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -439,6 +429,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d4b8a88685455ed29a21542a33abd9cb6510b6b129abadabdcef0f4c55bc8f61"
 dependencies = [
  "litrs",
+]
+
+[[package]]
+name = "engine_class_derive"
+version = "0.1.0"
+source = "git+https://github.com/Far-Beyond-Pulsar/Pulsar-Native#8344b7ce0a9ced247ef835f99a0eb1ef677c2354"
+dependencies = [
+ "proc-macro2",
+ "pulsar_reflection",
+ "quote",
+ "syn",
 ]
 
 [[package]]
@@ -1156,6 +1157,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "inventory"
+version = "0.3.24"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a4f0c30c76f2f4ccee3fe55a2435f691ca00c0e4bd87abe4f4a851b1d4dac39b"
+dependencies = [
+ "rustversion",
+]
+
+[[package]]
 name = "io-lifetimes"
 version = "1.0.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1344,6 +1354,17 @@ checksum = "bb85c154ba489f01b25c0d36ae69a87e4a1c73a72631fc6c0eb6dde34a73e44b"
 dependencies = [
  "num-traits",
  "pxfm",
+]
+
+[[package]]
+name = "mygame"
+version = "7.0.0"
+dependencies = [
+ "engine_class_derive",
+ "helio",
+ "pulsar_game",
+ "tracing",
+ "tracing-subscriber",
 ]
 
 [[package]]
@@ -1611,7 +1632,7 @@ dependencies = [
 [[package]]
 name = "profiling"
 version = "0.1.0"
-source = "git+https://github.com/Far-Beyond-Pulsar/Pulsar-Native#69722bcec1bb44dc03175446b30b120fa45bd6e7"
+source = "git+https://github.com/Far-Beyond-Pulsar/Pulsar-Native#8344b7ce0a9ced247ef835f99a0eb1ef677c2354"
 dependencies = [
  "chrono",
  "crossbeam-channel",
@@ -1630,12 +1651,23 @@ checksum = "3d595e54a326bc53c1c197b32d295e14b169e3cfeaa8dc82b529f947fba6bcf5"
 [[package]]
 name = "pulsar_game"
 version = "0.1.0"
-source = "git+https://github.com/Far-Beyond-Pulsar/Pulsar-Native#69722bcec1bb44dc03175446b30b120fa45bd6e7"
+source = "git+https://github.com/Far-Beyond-Pulsar/Pulsar-Native#8344b7ce0a9ced247ef835f99a0eb1ef677c2354"
 dependencies = [
  "ahash",
  "once_cell",
  "profiling 0.1.0",
  "smol",
+ "tracing",
+]
+
+[[package]]
+name = "pulsar_reflection"
+version = "0.1.0"
+source = "git+https://github.com/Far-Beyond-Pulsar/Pulsar-Native#8344b7ce0a9ced247ef835f99a0eb1ef677c2354"
+dependencies = [
+ "inventory",
+ "once_cell",
+ "serde",
  "tracing",
 ]
 
