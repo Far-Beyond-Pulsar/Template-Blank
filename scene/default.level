@@ -58,18 +58,18 @@
       "children": [],
       "scene_path": "Blue Light",
       "props": {
+        "intensity": 7.0,
         "color": [
           1.0,
           0.0,
           0.0,
           1.0
         ],
-        "size": "unsupported",
-        "is_trigger": true,
-        "intensity": 7.0,
         "shape": "Box",
-        "range": 40.0,
-        "offset": "unsupported"
+        "is_trigger": true,
+        "size": "unsupported",
+        "offset": "unsupported",
+        "range": 40.0
       }
     },
     {
@@ -101,14 +101,14 @@
       "children": [],
       "scene_path": "Red Light",
       "props": {
+        "range": 8.0,
         "intensity": 8.0,
         "color": [
           0.0,
           0.12156879156827927,
           0.9019607901573181,
           1.0
-        ],
-        "range": 8.0
+        ]
       }
     },
     {
@@ -121,7 +121,7 @@
         "position": [
           1.1288865,
           2.3309464,
-          10.551288
+          11.510185
         ],
         "rotation": [
           0.0,
@@ -140,14 +140,14 @@
       "children": [],
       "scene_path": "Yellowish Light",
       "props": {
+        "intensity": 40.0,
+        "range": 10.0,
         "color": [
           0.48627451062202454,
           0.2666666805744171,
           0.5137255191802979,
           1.0
-        ],
-        "range": 10.0,
-        "intensity": 100.0
+        ]
       }
     },
     {
@@ -209,7 +209,6 @@
       "children": [],
       "scene_path": "Cube",
       "props": {
-        "mesh_asset": "meshes/primitives/SM_Cube.fbx",
         "range": 0.0,
         "intensity": 0.0,
         "color": [
@@ -217,7 +216,8 @@
           1.0,
           1.0,
           1.0
-        ]
+        ],
+        "mesh_asset": "meshes/primitives/SM_Cube.fbx"
       }
     },
     {
@@ -261,7 +261,7 @@
       "transform": {
         "position": [
           0.0,
-          0.0,
+          0.57333726,
           6.440519
         ],
         "rotation": [
@@ -345,14 +345,14 @@
       "children": [],
       "scene_path": "Point Light",
       "props": {
-        "intensity": 2.0,
         "color": [
           0.49019622802734375,
           0.0,
           1.0,
           1.0
         ],
-        "range": 100.0
+        "range": 100.0,
+        "intensity": 2.0
       }
     },
     {
@@ -417,7 +417,14 @@
     }
   ],
   "components": {
-    "object_11": [],
+    "object_8": [
+      {
+        "class_name": "StaticMeshComponent",
+        "data": {
+          "mesh_asset": "meshes/primitives/SM_Cube.fbx"
+        }
+      }
+    ],
     "object_2": [
       {
         "class_name": "LightComponent",
@@ -442,11 +449,28 @@
         }
       }
     ],
-    "object_12": [
+    "object_7": [
       {
         "class_name": "StaticMeshComponent",
         "data": {
-          "mesh_asset": "monkey.fbx"
+          "mesh_asset": "meshes/primitives/SM_Cube.fbx"
+        }
+      }
+    ],
+    "object_11": [],
+    "object_4": [
+      {
+        "class_name": "LightComponent",
+        "data": {
+          "color": [
+            0.48627451062202454,
+            0.2666666805744171,
+            0.5137255191802979,
+            1.0
+          ],
+          "intensity": 40.0,
+          "range": 10.0,
+          "cast_shadows": false
         }
       }
     ],
@@ -467,15 +491,15 @@
         }
       }
     ],
-    "object_7": [
+    "object_5": [],
+    "object_9": [
       {
         "class_name": "StaticMeshComponent",
         "data": {
-          "mesh_asset": "meshes/primitives/SM_Cube.fbx"
+          "mesh_asset": "monkey.fbx"
         }
       }
     ],
-    "object_5": [],
     "object_6": [
       {
         "class_name": "StaticMeshComponent",
@@ -503,30 +527,6 @@
         }
       }
     ],
-    "object_8": [
-      {
-        "class_name": "StaticMeshComponent",
-        "data": {
-          "mesh_asset": "meshes/primitives/SM_Cube.fbx"
-        }
-      }
-    ],
-    "object_4": [
-      {
-        "class_name": "LightComponent",
-        "data": {
-          "color": [
-            0.48627451062202454,
-            0.2666666805744171,
-            0.5137255191802979,
-            1.0
-          ],
-          "intensity": 100.0,
-          "range": 10.0,
-          "cast_shadows": false
-        }
-      }
-    ],
     "object_10": [
       {
         "class_name": "LightComponent",
@@ -542,7 +542,7 @@
         }
       }
     ],
-    "object_9": [
+    "object_12": [
       {
         "class_name": "StaticMeshComponent",
         "data": {
@@ -552,8 +552,19 @@
     ]
   },
   "metadata": {
-    "created": "2026-05-20T17:31:27.035838+00:00",
-    "modified": "2026-05-20T17:31:27.035838+00:00",
+    "created": "2026-05-20T17:40:50.228057+00:00",
+    "modified": "2026-05-20T17:40:50.228057+00:00",
     "editor_version": "0.1.0"
+  },
+  "editor": {
+    "camera": {
+      "position": [
+        9.195934,
+        0.7045988,
+        6.471994
+      ],
+      "yaw": -1.5900003,
+      "pitch": -0.017499898
+    }
   }
 }
