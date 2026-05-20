@@ -7,3 +7,4 @@ GameState/.DS_Store
 target/.rustc_info.json
 target/flycheck0/stderr
 target/flycheck0/stdout
+src/test

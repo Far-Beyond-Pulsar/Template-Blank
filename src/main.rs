@@ -3,6 +3,7 @@
 use pulsar_game::prelude::*;
 
 mod classes;
+mod engine_main;
 
 fn main() {
     tracing_subscriber::fmt()
@@ -10,6 +11,8 @@ fn main() {
         .init();
 
     tracing::info!("Starting {}", env!("CARGO_PKG_NAME"));
+
+    engine_main::main();
 
     let threads = std::thread::available_parallelism()
         .map(|n| n.get())

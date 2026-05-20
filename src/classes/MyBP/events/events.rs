@@ -3,6 +3,9 @@
 
 use pulsar_game::prelude::*;
 use engine_class_derive::EngineClass;
+use pulsar_std::*;
+
+pub mod vars;
 
 #[derive(Clone, EngineClass)]
 pub struct MyBP {}
@@ -26,6 +29,8 @@ impl Actor for MyBP {
 }
 
 mod logic {
+    use super::vars::*;
+
     // Auto-generated code from Pulsar Blueprint
     // DO NOT EDIT - Changes will be overwritten
     // Compiled with PBGC (Pulsar Blueprint Graph Compiler)
@@ -35,7 +40,7 @@ mod logic {
 
 
     pub fn main() {
-        let node_072cc04c_7199_4cae_8a90_b82474db00f3_result = println(String::new());
+        if equals (0 , 0) { let node_d266a480_adf6_4c1e_8bb2_816439c52d39_result = println (String :: new ()) ; } else { exec_output ! ("False") ; }
     }
 
 }

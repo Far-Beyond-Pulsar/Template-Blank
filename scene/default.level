@@ -1,5 +1,5 @@
 {
-  "version": "2.0",
+  "version": "2.1",
   "objects": [
     {
       "id": "object_1",
@@ -26,8 +26,8 @@
       "locked": false,
       "parent": null,
       "children": [],
-      "components": [],
-      "scene_path": "Main Camera"
+      "scene_path": "Main Camera",
+      "props": {}
     },
     {
       "id": "object_2",
@@ -37,9 +37,9 @@
       },
       "transform": {
         "position": [
-          -8.0,
-          6.0,
-          -6.0
+          2.176838,
+          0.48084688,
+          -0.382549
         ],
         "rotation": [
           0.0,
@@ -56,8 +56,21 @@
       "locked": false,
       "parent": null,
       "children": [],
-      "components": [],
-      "scene_path": "Blue Light"
+      "scene_path": "Blue Light",
+      "props": {
+        "color": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "size": "unsupported",
+        "is_trigger": true,
+        "intensity": 7.0,
+        "shape": "Box",
+        "range": 40.0,
+        "offset": "unsupported"
+      }
     },
     {
       "id": "object_3",
@@ -67,9 +80,9 @@
       },
       "transform": {
         "position": [
-          8.0,
-          6.0,
-          -6.0
+          10.841295,
+          0.723,
+          -7.5287485
         ],
         "rotation": [
           0.0,
@@ -86,20 +99,29 @@
       "locked": false,
       "parent": null,
       "children": [],
-      "components": [],
-      "scene_path": "Red Light"
+      "scene_path": "Red Light",
+      "props": {
+        "intensity": 8.0,
+        "color": [
+          0.0,
+          0.12156879156827927,
+          0.9019607901573181,
+          1.0
+        ],
+        "range": 8.0
+      }
     },
     {
       "id": "object_4",
-      "name": "Yellow Light",
+      "name": "Yellowish Light",
       "object_type": {
         "Light": "Point"
       },
       "transform": {
         "position": [
-          0.0,
-          7.0,
-          8.0
+          1.1288865,
+          2.3309464,
+          10.551288
         ],
         "rotation": [
           0.0,
@@ -116,8 +138,17 @@
       "locked": false,
       "parent": null,
       "children": [],
-      "components": [],
-      "scene_path": "Yellow Light"
+      "scene_path": "Yellowish Light",
+      "props": {
+        "color": [
+          0.48627451062202454,
+          0.2666666805744171,
+          0.5137255191802979,
+          1.0
+        ],
+        "range": 10.0,
+        "intensity": 100.0
+      }
     },
     {
       "id": "object_5",
@@ -128,16 +159,16 @@
       "transform": {
         "position": [
           0.0,
-          0.0,
+          -1.1659746,
           0.0
         ],
         "rotation": [
-          0.0,
+          -0.0,
           0.0,
           0.0
         ],
         "scale": [
-          3.0,
+          3.6010776,
           1.0,
           3.0
         ]
@@ -146,389 +177,165 @@
       "locked": false,
       "parent": null,
       "children": [],
-      "components": [],
-      "scene_path": "Ground"
+      "scene_path": "Ground",
+      "props": {}
     },
     {
       "id": "object_6",
-      "name": "Podium Base",
+      "name": "Cube",
       "object_type": {
         "Mesh": "Cube"
       },
       "transform": {
         "position": [
+          -2.1239538,
           0.0,
-          0.15,
-          0.0
+          6.1049013
         ],
         "rotation": [
-          0.0,
+          -0.0,
           0.0,
           0.0
         ],
         "scale": [
-          3.0,
-          0.3,
-          3.0
+          0.19919938,
+          0.53285664,
+          10.383612
         ]
       },
       "visible": true,
       "locked": false,
       "parent": null,
       "children": [],
-      "components": [],
-      "scene_path": "Podium Base"
+      "scene_path": "Cube",
+      "props": {
+        "mesh_asset": "meshes/primitives/SM_Cube.fbx",
+        "range": 0.0,
+        "intensity": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
     },
     {
       "id": "object_7",
-      "name": "Podium Mid",
+      "name": "Cube",
       "object_type": {
         "Mesh": "Cube"
       },
       "transform": {
         "position": [
           0.0,
-          0.5,
-          0.0
+          0.0,
+          -7.6679277
         ],
         "rotation": [
-          0.0,
+          -0.0,
           0.0,
           0.0
         ],
         "scale": [
-          2.0,
-          0.2,
-          2.0
+          1.0,
+          1.0,
+          1.0
         ]
       },
       "visible": true,
       "locked": false,
       "parent": null,
       "children": [],
-      "components": [],
-      "scene_path": "Podium Mid"
+      "scene_path": "Cube",
+      "props": {
+        "mesh_asset": "meshes/primitives/SM_Cube.fbx"
+      }
     },
     {
       "id": "object_8",
-      "name": "Hero Sphere",
+      "name": "Cylinder",
       "object_type": {
-        "Mesh": "Sphere"
+        "Mesh": "Cylinder"
       },
       "transform": {
         "position": [
           0.0,
-          1.5,
-          0.0
+          0.0,
+          6.440519
         ],
         "rotation": [
-          0.0,
+          -0.0,
           0.0,
           0.0
         ],
         "scale": [
-          1.0,
-          1.0,
-          1.0
+          1.2419902,
+          7.063333,
+          12.94136
         ]
       },
       "visible": true,
       "locked": false,
       "parent": null,
       "children": [],
-      "components": [],
-      "scene_path": "Hero Sphere"
+      "scene_path": "Cylinder",
+      "props": {
+        "mesh_asset": "meshes/primitives/SM_Cube.fbx"
+      }
     },
     {
       "id": "object_9",
-      "name": "Column L1",
+      "name": "Sphere",
       "object_type": {
-        "Mesh": "Cylinder"
+        "Mesh": "Sphere"
       },
       "transform": {
         "position": [
-          -4.0,
-          1.5,
-          -2.0
+          2.3915355,
+          0.3692004,
+          3.9489691
         ],
         "rotation": [
-          0.0,
-          0.0,
-          0.0
+          -82.85608,
+          -8.373775,
+          26.394918
         ],
         "scale": [
-          0.4,
-          3.0,
-          0.4
+          0.9999999,
+          0.99999964,
+          0.99999964
         ]
       },
       "visible": true,
       "locked": false,
       "parent": null,
       "children": [],
-      "components": [],
-      "scene_path": "Column L1"
+      "scene_path": "Sphere",
+      "props": {
+        "mesh_asset": "monkey.fbx"
+      }
     },
     {
       "id": "object_10",
-      "name": "Column L2",
+      "name": "Point Light",
       "object_type": {
-        "Mesh": "Cylinder"
+        "Light": "Point"
       },
       "transform": {
         "position": [
-          -4.0,
-          1.5,
-          2.0
+          -8.822676,
+          0.0,
+          -4.5741253
         ],
         "rotation": [
           0.0,
           0.0,
-          0.0
-        ],
-        "scale": [
-          0.4,
-          3.0,
-          0.4
-        ]
-      },
-      "visible": true,
-      "locked": false,
-      "parent": null,
-      "children": [],
-      "components": [],
-      "scene_path": "Column L2"
-    },
-    {
-      "id": "object_11",
-      "name": "Lintel L",
-      "object_type": {
-        "Mesh": "Cube"
-      },
-      "transform": {
-        "position": [
-          -4.0,
-          3.2,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          0.6,
-          0.4,
-          4.8
-        ]
-      },
-      "visible": true,
-      "locked": false,
-      "parent": null,
-      "children": [],
-      "components": [],
-      "scene_path": "Lintel L"
-    },
-    {
-      "id": "object_12",
-      "name": "Tower Base",
-      "object_type": {
-        "Mesh": "Cube"
-      },
-      "transform": {
-        "position": [
-          4.5,
-          0.75,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          20.0,
-          0.0
-        ],
-        "scale": [
-          1.5,
-          1.5,
-          1.5
-        ]
-      },
-      "visible": true,
-      "locked": false,
-      "parent": null,
-      "children": [],
-      "components": [],
-      "scene_path": "Tower Base"
-    },
-    {
-      "id": "object_13",
-      "name": "Tower Mid",
-      "object_type": {
-        "Mesh": "Cube"
-      },
-      "transform": {
-        "position": [
-          4.5,
-          2.25,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          35.0,
-          0.0
-        ],
-        "scale": [
-          1.1,
-          1.5,
-          1.1
-        ]
-      },
-      "visible": true,
-      "locked": false,
-      "parent": null,
-      "children": [],
-      "components": [],
-      "scene_path": "Tower Mid"
-    },
-    {
-      "id": "object_14",
-      "name": "Tower Top",
-      "object_type": {
-        "Mesh": "Cube"
-      },
-      "transform": {
-        "position": [
-          4.5,
-          3.5,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          50.0,
-          0.0
-        ],
-        "scale": [
-          0.7,
-          0.7,
-          0.7
-        ]
-      },
-      "visible": true,
-      "locked": false,
-      "parent": null,
-      "children": [],
-      "components": [],
-      "scene_path": "Tower Top"
-    },
-    {
-      "id": "object_15",
-      "name": "Rock A",
-      "object_type": {
-        "Mesh": "Sphere"
-      },
-      "transform": {
-        "position": [
-          -2.0,
-          0.3,
-          4.0
-        ],
-        "rotation": [
-          15.0,
-          30.0,
-          0.0
-        ],
-        "scale": [
-          0.6,
-          0.5,
-          0.7
-        ]
-      },
-      "visible": true,
-      "locked": false,
-      "parent": null,
-      "children": [],
-      "components": [],
-      "scene_path": "Rock A"
-    },
-    {
-      "id": "object_16",
-      "name": "Rock B",
-      "object_type": {
-        "Mesh": "Sphere"
-      },
-      "transform": {
-        "position": [
-          2.5,
-          0.25,
-          4.5
-        ],
-        "rotation": [
-          0.0,
-          60.0,
-          20.0
-        ],
-        "scale": [
-          0.45,
-          0.4,
-          0.55
-        ]
-      },
-      "visible": true,
-      "locked": false,
-      "parent": null,
-      "children": [],
-      "components": [],
-      "scene_path": "Rock B"
-    },
-    {
-      "id": "object_17",
-      "name": "Ramp",
-      "object_type": {
-        "Mesh": "Plane"
-      },
-      "transform": {
-        "position": [
-          -1.0,
-          0.6,
-          -4.5
-        ],
-        "rotation": [
-          -25.0,
-          15.0,
           0.0
         ],
         "scale": [
           1.0,
           1.0,
-          1.5
-        ]
-      },
-      "visible": true,
-      "locked": false,
-      "parent": null,
-      "children": [],
-      "components": [],
-      "scene_path": "Ramp"
-    },
-    {
-      "id": "object_18",
-      "name": "Bridge Deck",
-      "object_type": {
-        "Mesh": "Cube"
-      },
-      "transform": {
-        "position": [
-          0.0,
-          1.8,
-          -6.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          4.5,
-          0.25,
           1.0
         ]
       },
@@ -536,20 +343,27 @@
       "locked": false,
       "parent": null,
       "children": [],
-      "components": [],
-      "scene_path": "Bridge Deck"
+      "scene_path": "Point Light",
+      "props": {
+        "intensity": 2.0,
+        "color": [
+          0.49019622802734375,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "range": 100.0
+      }
     },
     {
-      "id": "object_19",
-      "name": "Bridge Pillar L",
-      "object_type": {
-        "Mesh": "Cylinder"
-      },
+      "id": "object_11",
+      "name": "Particle System",
+      "object_type": "ParticleSystem",
       "transform": {
         "position": [
-          -2.0,
-          0.9,
-          -6.0
+          0.0,
+          0.0,
+          0.0
         ],
         "rotation": [
           0.0,
@@ -557,112 +371,189 @@
           0.0
         ],
         "scale": [
-          0.3,
-          1.8,
-          0.3
+          1.0,
+          1.0,
+          1.0
         ]
       },
       "visible": true,
       "locked": false,
       "parent": null,
       "children": [],
-      "components": [],
-      "scene_path": "Bridge Pillar L"
+      "scene_path": "Particle System",
+      "props": {}
     },
     {
-      "id": "object_20",
-      "name": "Bridge Pillar R",
+      "id": "object_12",
+      "name": "Cube",
       "object_type": {
-        "Mesh": "Cylinder"
+        "Mesh": "Cube"
       },
       "transform": {
         "position": [
-          2.0,
-          0.9,
-          -6.0
+          2.6532207,
+          0.12483096,
+          8.255447
         ],
         "rotation": [
-          0.0,
-          0.0,
-          0.0
+          -88.56949,
+          -179.99994,
+          -11.092664
         ],
         "scale": [
-          0.3,
-          1.8,
-          0.3
+          0.99999994,
+          0.99999994,
+          1.0000001
         ]
       },
       "visible": true,
       "locked": false,
       "parent": null,
       "children": [],
-      "components": [],
-      "scene_path": "Bridge Pillar R"
-    },
-    {
-      "id": "object_21",
-      "name": "Float Orb A",
-      "object_type": {
-        "Mesh": "Sphere"
-      },
-      "transform": {
-        "position": [
-          -6.0,
-          3.8,
-          3.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          0.45,
-          0.45,
-          0.45
-        ]
-      },
-      "visible": true,
-      "locked": false,
-      "parent": null,
-      "children": [],
-      "components": [],
-      "scene_path": "Float Orb A"
-    },
-    {
-      "id": "object_22",
-      "name": "Float Orb B",
-      "object_type": {
-        "Mesh": "Sphere"
-      },
-      "transform": {
-        "position": [
-          6.0,
-          4.2,
-          2.5
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          0.55,
-          0.55,
-          0.55
-        ]
-      },
-      "visible": true,
-      "locked": false,
-      "parent": null,
-      "children": [],
-      "components": [],
-      "scene_path": "Float Orb B"
+      "scene_path": "Cube",
+      "props": {
+        "mesh_asset": "monkey.fbx"
+      }
     }
   ],
+  "components": {
+    "object_11": [],
+    "object_2": [
+      {
+        "class_name": "LightComponent",
+        "data": {
+          "color": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "intensity": 7.0,
+          "range": 40.0
+        }
+      },
+      {
+        "class_name": "ColliderDescriptor",
+        "data": {
+          "shape": "Box",
+          "offset": "unsupported",
+          "size": "unsupported",
+          "is_trigger": true
+        }
+      }
+    ],
+    "object_12": [
+      {
+        "class_name": "StaticMeshComponent",
+        "data": {
+          "mesh_asset": "monkey.fbx"
+        }
+      }
+    ],
+    "object_1": [],
+    "object_3": [
+      {
+        "class_name": "LightComponent",
+        "data": {
+          "color": [
+            0.0,
+            0.12156879156827928,
+            0.901960790157318,
+            1.0
+          ],
+          "intensity": 8.0,
+          "range": 8.0,
+          "cast_shadows": false
+        }
+      }
+    ],
+    "object_7": [
+      {
+        "class_name": "StaticMeshComponent",
+        "data": {
+          "mesh_asset": "meshes/primitives/SM_Cube.fbx"
+        }
+      }
+    ],
+    "object_5": [],
+    "object_6": [
+      {
+        "class_name": "StaticMeshComponent",
+        "data": {
+          "mesh_asset": "meshes/primitives/SM_Cube.fbx"
+        }
+      },
+      {
+        "class_name": "LightComponent",
+        "data": {
+          "light_type": "Point",
+          "intensity": 0.0,
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "range": 0.0,
+          "inner_cone_angle": 0.0,
+          "outer_cone_angle": 0.0,
+          "cast_shadows": false,
+          "shadow_resolution": 0.0,
+          "shadow_bias": 0.0
+        }
+      }
+    ],
+    "object_8": [
+      {
+        "class_name": "StaticMeshComponent",
+        "data": {
+          "mesh_asset": "meshes/primitives/SM_Cube.fbx"
+        }
+      }
+    ],
+    "object_4": [
+      {
+        "class_name": "LightComponent",
+        "data": {
+          "color": [
+            0.48627451062202454,
+            0.2666666805744171,
+            0.5137255191802979,
+            1.0
+          ],
+          "intensity": 100.0,
+          "range": 10.0,
+          "cast_shadows": false
+        }
+      }
+    ],
+    "object_10": [
+      {
+        "class_name": "LightComponent",
+        "data": {
+          "color": [
+            0.49019622802734375,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "intensity": 2.0,
+          "range": 100.0
+        }
+      }
+    ],
+    "object_9": [
+      {
+        "class_name": "StaticMeshComponent",
+        "data": {
+          "mesh_asset": "monkey.fbx"
+        }
+      }
+    ]
+  },
   "metadata": {
-    "created": "2026-05-11T19:08:52.662774+00:00",
-    "modified": "2026-05-11T19:08:52.662774+00:00",
+    "created": "2026-05-20T17:31:27.035838+00:00",
+    "modified": "2026-05-20T17:31:27.035838+00:00",
     "editor_version": "0.1.0"
   }
 }

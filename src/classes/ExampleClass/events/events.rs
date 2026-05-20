@@ -3,6 +3,9 @@
 
 use pulsar_game::prelude::*;
 use engine_class_derive::EngineClass;
+use pulsar_std::*;
+
+pub mod vars;
 
 #[derive(Clone, EngineClass)]
 pub struct ExampleClass {}
@@ -26,6 +29,8 @@ impl Actor for ExampleClass {
 }
 
 mod logic {
+    use super::vars::*;
+
     // Auto-generated code from Pulsar Blueprint
     // DO NOT EDIT - Changes will be overwritten
     // Compiled with PBGC (Pulsar Blueprint Graph Compiler)
@@ -33,13 +38,47 @@ mod logic {
     // NOTE: Replace with actual pulsar_std import in production
     // use pulsar_std::*;
 
+    use std::cell::{Cell, RefCell};
 
-    pub fn begin_play() {
+
+    // PBGC_VARIABLE_STORAGE_BEGIN
+    thread_local! {
+        static PBGC_VAR_DSFASDF: RefCell<Option<Typed(TypeInfo { base_type: "Typed(TypeInfo { base_type: \"String\", wrappers: [], is_wildcard: false })", wrappers: [], is_wildcard: false })>> = RefCell::new(None);
     }
 
+    #[inline]
+    fn __pbgc_set_copy<T: Copy>(slot: &Cell<Option<T>>, value: T) {
+        slot.set(Some(value));
+    }
+
+    #[inline]
+    fn __pbgc_get_copy<T: Copy>(slot: &Cell<Option<T>>, var_name: &str) -> T {
+        slot.get().unwrap_or_else(|| panic!("PBGC variable '{}' read before assignment", var_name))
+    }
+
+    #[inline]
+    fn __pbgc_set_clone<T>(slot: &RefCell<Option<T>>, value: T) {
+        *slot.borrow_mut() = Some(value);
+    }
+
+    #[inline]
+    fn __pbgc_get_clone<T: Clone>(slot: &RefCell<Option<T>>, var_name: &str) -> T {
+        slot.borrow()
+            .as_ref()
+            .cloned()
+            .unwrap_or_else(|| panic!("PBGC variable '{}' read before assignment", var_name))
+    }
+    // PBGC_VARIABLE_STORAGE_END
+
     pub fn main() {
-        DSFASDF.with(|v| *v.borrow_mut() = DSFASDF.with(|v| v.borrow().clone()));
+        let node_greater_node_result = greater_than(add(2, 3), 3);
+        PBGC_VAR_DSFASDF.with(|v| __pbgc_set_clone(v, PBGC_VAR_DSFASDF.with(|v| __pbgc_get_clone(v, "dsfasdf"))));
         if node_dcf02495_0e52_439e_8e2d_8c0d69a86ff9_result { let node_print_true_result = print_string ("Result is greater than 3! \u{2713}") ; } else { let node_print_false_result = print_string ("Result is 3 or less. \u{2717}") ; }
+    }
+
+    pub fn begin_play() {
+        let node_greater_node_result = greater_than(add(2, 3), 3);
+        let lua_runtime = Lua :: new () ; let output : Result < String > = lua_runtime . load (templateLua ()) . eval () ; return output . unwrap () ;
     }
 
 }

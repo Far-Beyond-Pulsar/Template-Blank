@@ -8,7 +8,9 @@ license = "Proprietary"
 
 [dependencies]
 pulsar_game = { git = "https://github.com/Far-Beyond-Pulsar/Pulsar-Native" }
+pulsar_std = { git = "https://github.com/Far-Beyond-Pulsar/Pulsar-Native" }
 engine_class_derive = { git = "https://github.com/Far-Beyond-Pulsar/Pulsar-Native" }
+pulsar_reflection = { git = "https://github.com/Far-Beyond-Pulsar/Pulsar-Native" }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
 helio = { git = "https://github.com/Far-Beyond-Pulsar/Helio" }
