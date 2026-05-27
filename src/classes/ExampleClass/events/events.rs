@@ -4,27 +4,66 @@
 use pulsar_game::prelude::*;
 use engine_class_derive::EngineClass;
 use pulsar_std::*;
+use pulsar_reflection;
+#[allow(unused_imports)]
+use serde_json;
 
 pub mod vars;
 
-#[derive(Clone, EngineClass)]
-pub struct ExampleClass {}
+#[derive(EngineClass)]
+pub struct ExampleClass {
+    /// Runtime component store — populated lazily in `begin_play`.
+    pub components: pulsar_game::ComponentStore,
+}
 
 impl ExampleClass {
-    pub fn new() -> Self { Self {} }
+    pub fn new() -> Self { Self { components: pulsar_game::ComponentStore::new() } }
 }
 
 impl Default for ExampleClass {
     fn default() -> Self { Self::new() }
 }
 
+impl ExampleClass {
+    /// Initialise components from the prefab defaults baked in at compile time.
+    ///
+    /// Idempotent — does nothing if components are already present.
+    pub fn __init_components(&mut self) {
+        if !self.components.is_empty() { return; }
+        self.components.add_from_registry("LightComponent", &serde_json::from_str("{\"light_type\":\"Point\",\"intensity\":0.0,\"color\":[0.843137264251709,0.0,0.0,1.0],\"range\":0.0,\"inner_cone_angle\":0.0,\"outer_cone_angle\":10.0,\"cast_shadows\":true,\"shadow_resolution\":0.0,\"shadow_bias\":0.0}").unwrap_or(serde_json::json!({})));
+        self.components.add_from_registry("StaticMeshComponent", &serde_json::from_str("{\"mesh_asset\":\"\",\"movability\":\"None\",\"material\":\"None\",\"transform\":\"None\",\"bounds\":\"None\"}").unwrap_or(serde_json::json!({})));
+    }
+
+    /// Call `begin_play` on each component that implements it.
+    pub fn __run_component_begin_plays(&mut self) {
+        // Components are EngineClass values; their begin_play (if any) is a
+        // method exposed via the blueprint method registry.
+        for (class_name, _) in self.components.iter() {
+            // Check if the component registered a "begin_play" method
+            if let Some(methods) = pulsar_reflection::REGISTRY.get_methods(class_name) {
+                if let Some(bp_method) = methods.into_iter().find(|m| m.name == "begin_play") {
+                    if let Some(comp) = self.components.get_by_name_mut(class_name) {
+                        (bp_method.caller)(comp, vec![]);
+                    }
+                }
+            }
+        }
+    }
+}
+
 impl Actor for ExampleClass {
     fn begin_play(&mut self, _entity: Entity, _world: &mut World) {
+        self.__init_components();
+        self.__run_component_begin_plays();
+        pulsar_game::__bp_set_comp_ctx(&mut self.components);
         logic::begin_play();
+        pulsar_game::__bp_clear_comp_ctx();
     }
 
     fn tick(&mut self, _entity: Entity, _world: &mut World, _time: GameTime) {
+        pulsar_game::__bp_set_comp_ctx(&mut self.components);
         // No tick event in this blueprint.
+        pulsar_game::__bp_clear_comp_ctx();
     }
 }
 
@@ -70,15 +109,15 @@ mod logic {
     }
     // PBGC_VARIABLE_STORAGE_END
 
-    pub fn main() {
-        let node_greater_node_result = greater_than(add(2, 3), 3);
-        PBGC_VAR_DSFASDF.with(|v| __pbgc_set_clone(v, PBGC_VAR_DSFASDF.with(|v| __pbgc_get_clone(v, "dsfasdf"))));
-        if node_dcf02495_0e52_439e_8e2d_8c0d69a86ff9_result { let node_print_true_result = print_string ("Result is greater than 3! \u{2713}") ; } else { let node_print_false_result = print_string ("Result is 3 or less. \u{2717}") ; }
+    pub fn begin_play() {
+        let node_greater_node_result = greater_than(add("{\"Number\":2.0}", "{\"Number\":3.0}"), "{\"Number\":3.0}");
+        let lua_runtime = Lua :: new () ; let output : Result < String > = lua_runtime . load (templateLua ()) . eval () ; return output . unwrap () ;
     }
 
-    pub fn begin_play() {
-        let node_greater_node_result = greater_than(add(2, 3), 3);
-        let lua_runtime = Lua :: new () ; let output : Result < String > = lua_runtime . load (templateLua ()) . eval () ; return output . unwrap () ;
+    pub fn main() {
+        let node_greater_node_result = greater_than(add("{\"Number\":2.0}", "{\"Number\":3.0}"), "{\"Number\":3.0}");
+        PBGC_VAR_DSFASDF.with(|v| __pbgc_set_clone(v, PBGC_VAR_DSFASDF.with(|v| __pbgc_get_clone(v, "dsfasdf"))));
+        if node_dcf02495_0e52_439e_8e2d_8c0d69a86ff9_result { let node_print_true_result = print_string ("{\"String\":\"Result is greater than 3! \u{2713}\"}") ; } else { let node_print_false_result = print_string ("{\"String\":\"Result is 3 or less. \u{2717}\"}") ; }
     }
 
 }

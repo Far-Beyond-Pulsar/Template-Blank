@@ -3,11 +3,14 @@
 
 use pulsar_game::prelude::*;
 use engine_class_derive::EngineClass;
+#[allow(unused_imports)]
 use pulsar_std::*;
 
-pub mod vars;
+// vars lives two levels up: <Class>::events::events → <Class>::events → <Class>
+#[allow(unused_imports)]
+use super::super::vars::*;
 
-#[derive(Clone, EngineClass)]
+#[derive(EngineClass)]
 pub struct MyBP {}
 
 impl MyBP {
@@ -20,7 +23,7 @@ impl Default for MyBP {
 
 impl Actor for MyBP {
     fn begin_play(&mut self, _entity: Entity, _world: &mut World) {
-        // No begin_play event in this blueprint.
+        logic::begin_play();
     }
 
     fn tick(&mut self, _entity: Entity, _world: &mut World, _time: GameTime) {
@@ -29,7 +32,10 @@ impl Actor for MyBP {
 }
 
 mod logic {
-    use super::vars::*;
+    // vars is three levels up inside this inline module:
+    // logic → events::events → events → <Class> → vars
+    #[allow(unused_imports)]
+    use super::super::super::vars::*;
 
     // Auto-generated code from Pulsar Blueprint
     // DO NOT EDIT - Changes will be overwritten
@@ -39,8 +45,8 @@ mod logic {
     // use pulsar_std::*;
 
 
-    pub fn main() {
-        if equals (0 , 0) { let node_d266a480_adf6_4c1e_8bb2_816439c52d39_result = println (String :: new ()) ; } else { exec_output ! ("False") ; }
+    pub fn begin_play() {
+        let node_a0bdff47_956d_4174_bd8b_b74fb1b8b2ab_result = print_number (0.0) ; let node_abbfaa66_9729_4fdd_bf1b_5bd471464ff2_result = print_number (0.0) ; let node_4429dec8_233f_4e50_95b9_77a2032dbf40_result = println (String :: new ()) ; let node_f3943088_1597_4a1c_8558_7a31a26b2c92_result = print_formatted (String :: new () , String :: new () , String :: new () , String :: new ()) ;
     }
 
 }

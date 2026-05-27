@@ -12,13 +12,16 @@ fn main() {
 
     tracing::info!("Starting {}", env!("CARGO_PKG_NAME"));
 
-    engine_main::main();
-
     let threads = std::thread::available_parallelism()
         .map(|n| n.get())
         .unwrap_or(4);
 
     let mut game = TickLoop::new(TickMode::default(), threads);
+
+    if let Err(e) = engine_main::setup(&mut game) {
+        tracing::error!("Level setup failed: {e}");
+        std::process::exit(1);
+    }
 
     tracing::info!("World ready — entering tick loop");
     game.run_blocking();

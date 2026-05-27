@@ -28,7 +28,14 @@
       "children": [],
       "scene_path": "DuelObject",
       "props": {
+        "range": 40.0,
+        "shape": "Box",
         "intensity": 7.0,
+        "size": "unsupported",
+        "material": "None",
+        "offset": "unsupported",
+        "is_trigger": true,
+        "mesh_asset": "meshes/primitives/SM_Sphere.fbx",
         "__component_instances": [
           {
             "index": 0,
@@ -67,19 +74,12 @@
           }
         ],
         "movability": "None",
-        "mesh_asset": "meshes/primitives/SM_Sphere.fbx",
-        "offset": "unsupported",
         "color": [
           1.0,
           0.0,
           0.0,
           1.0
-        ],
-        "size": "unsupported",
-        "shape": "Box",
-        "range": 40.0,
-        "material": "None",
-        "is_trigger": true
+        ]
       }
     },
     {
@@ -118,11 +118,11 @@
           1.0,
           1.0
         ],
-        "offset": "unsupported",
-        "range": 8.0,
         "size": "unsupported",
-        "shape": "Box",
+        "offset": "unsupported",
         "intensity": 8.0,
+        "shape": "Box",
+        "range": 8.0,
         "__component_instances": [
           {
             "index": 0,
@@ -171,7 +171,6 @@
       "children": [],
       "scene_path": "Pink Light",
       "props": {
-        "range": 10.0,
         "__component_instances": [
           {
             "index": 0,
@@ -189,6 +188,7 @@
             }
           }
         ],
+        "range": 10.0,
         "color": [
           0.9058823585510254,
           0.09803923964500427,
@@ -227,8 +227,6 @@
       "children": [],
       "scene_path": "Ground",
       "props": {
-        "material": "None",
-        "mesh_asset": "meshes/primitives/SM_Cube.fbx",
         "movability": "None",
         "__component_instances": [
           {
@@ -242,7 +240,9 @@
               "bounds": "None"
             }
           }
-        ]
+        ],
+        "mesh_asset": "meshes/primitives/SM_Cube.fbx",
+        "material": "None"
       }
     },
     {
@@ -315,8 +315,6 @@
       "children": [],
       "scene_path": "Stage Wall",
       "props": {
-        "mesh_asset": "meshes/primitives/SM_Cylinder.fbx",
-        "icon_asset": ".pulsar/thumbnails/ed3d2121f7af4256.png",
         "__component_instances": [
           {
             "index": 0,
@@ -325,7 +323,9 @@
               "mesh_asset": "meshes/primitives/SM_Cylinder.fbx"
             }
           }
-        ]
+        ],
+        "icon_asset": ".pulsar/thumbnails/ed3d2121f7af4256.png",
+        "mesh_asset": "meshes/primitives/SM_Cylinder.fbx"
       }
     },
     {
@@ -398,6 +398,14 @@
       "children": [],
       "scene_path": "Point Light",
       "props": {
+        "range": 100.0,
+        "color": [
+          0.49019622802734375,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 1.0,
         "__component_instances": [
           {
             "index": 0,
@@ -413,14 +421,6 @@
               "range": 100.0
             }
           }
-        ],
-        "range": 100.0,
-        "intensity": 1.0,
-        "color": [
-          0.49019622802734375,
-          0.0,
-          1.0,
-          1.0
         ]
       }
     },
@@ -565,7 +565,16 @@
       "children": [],
       "scene_path": "Point Light",
       "props": {
+        "range": 100.0,
         "intensity": 2.0,
+        "color": [
+          0.6078431606292725,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "shape": "Box",
+        "is_trigger": false,
         "__component_instances": [
           {
             "index": 0,
@@ -592,17 +601,8 @@
             }
           }
         ],
-        "range": 100.0,
-        "is_trigger": false,
-        "color": [
-          0.6078431606292725,
-          1.0,
-          0.0,
-          1.0
-        ],
         "size": "unsupported",
-        "offset": "unsupported",
-        "shape": "Box"
+        "offset": "unsupported"
       }
     },
     {
@@ -632,7 +632,14 @@
       "children": [],
       "scene_path": "DuelObject",
       "props": {
+        "range": 40.0,
+        "shape": "Box",
         "intensity": 7.0,
+        "size": "unsupported",
+        "material": "None",
+        "offset": "unsupported",
+        "is_trigger": true,
+        "mesh_asset": "meshes/primitives/SM_Sphere.fbx",
         "__component_instances": [
           {
             "index": 0,
@@ -671,24 +678,61 @@
           }
         ],
         "movability": "None",
-        "mesh_asset": "meshes/primitives/SM_Sphere.fbx",
-        "offset": "unsupported",
         "color": [
           1.0,
           0.0,
           0.0,
           1.0
-        ],
-        "size": "unsupported",
-        "shape": "Box",
-        "range": 40.0,
-        "material": "None",
-        "is_trigger": true
+        ]
       }
     }
   ],
   "components": {
     "object_7": [
+      {
+        "class_name": "StaticMeshComponent",
+        "enabled": true,
+        "data": {
+          "mesh_asset": "monkey.fbx"
+        }
+      }
+    ],
+    "object_9": [
+      {
+        "class_name": "StaticMeshComponent",
+        "enabled": true,
+        "data": {
+          "mesh_asset": "monkey.fbx"
+        }
+      }
+    ],
+    "object_13": [
+      {
+        "class_name": "StaticMeshComponent",
+        "enabled": true,
+        "data": {
+          "mesh_asset": "meshes/primitives/SM_Cube.fbx"
+        }
+      }
+    ],
+    "object_4": [
+      {
+        "class_name": "LightComponent",
+        "enabled": true,
+        "data": {
+          "color": [
+            0.9058823585510254,
+            0.09803923964500429,
+            0.35686275362968445,
+            1.0
+          ],
+          "intensity": 8.0,
+          "range": 10.0,
+          "cast_shadows": false
+        }
+      }
+    ],
+    "object_12": [
       {
         "class_name": "StaticMeshComponent",
         "enabled": true,
@@ -713,31 +757,20 @@
         }
       }
     ],
-    "object_11": [],
-    "object_9": [
+    "object_3": [
       {
-        "class_name": "StaticMeshComponent",
+        "class_name": "LightComponent",
         "enabled": true,
         "data": {
-          "mesh_asset": "monkey.fbx"
-        }
-      }
-    ],
-    "object_13": [
-      {
-        "class_name": "StaticMeshComponent",
-        "enabled": true,
-        "data": {
-          "mesh_asset": "meshes/primitives/SM_Cube.fbx"
-        }
-      }
-    ],
-    "object_12": [
-      {
-        "class_name": "StaticMeshComponent",
-        "enabled": true,
-        "data": {
-          "mesh_asset": "monkey.fbx"
+          "color": [
+            0.058823585510253906,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "intensity": 8.0,
+          "range": 8.0,
+          "cast_shadows": false
         }
       }
     ],
@@ -767,37 +800,12 @@
         }
       }
     ],
-    "object_3": [
+    "object_8": [
       {
-        "class_name": "LightComponent",
+        "class_name": "StaticMeshComponent",
         "enabled": true,
         "data": {
-          "color": [
-            0.058823585510253906,
-            0.0,
-            1.0,
-            1.0
-          ],
-          "intensity": 8.0,
-          "range": 8.0,
-          "cast_shadows": false
-        }
-      }
-    ],
-    "object_4": [
-      {
-        "class_name": "LightComponent",
-        "enabled": true,
-        "data": {
-          "color": [
-            0.9058823585510254,
-            0.09803923964500429,
-            0.35686275362968445,
-            1.0
-          ],
-          "intensity": 8.0,
-          "range": 10.0,
-          "cast_shadows": false
+          "mesh_asset": "meshes/primitives/SM_Cylinder.fbx"
         }
       }
     ],
@@ -851,30 +859,22 @@
         }
       }
     ],
-    "object_8": [
-      {
-        "class_name": "StaticMeshComponent",
-        "enabled": true,
-        "data": {
-          "mesh_asset": "meshes/primitives/SM_Cylinder.fbx"
-        }
-      }
-    ]
+    "object_11": []
   },
   "metadata": {
-    "created": "2026-05-21T17:37:25.588890+00:00",
-    "modified": "2026-05-21T17:37:25.588890+00:00",
+    "created": "2026-05-25T22:56:26.628146+00:00",
+    "modified": "2026-05-25T22:56:26.628146+00:00",
     "editor_version": "0.1.0"
   },
   "editor": {
     "camera": {
       "position": [
-        12.514264,
+        11.446135,
         1.8219625,
-        6.7186246
+        6.678475
       ],
-      "yaw": 4.6974616,
-      "pitch": -0.0024997988
+      "yaw": 4.7499633,
+      "pitch": -0.01749969
     }
   }
 }
