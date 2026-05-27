@@ -8,6 +8,64 @@
   },
   "script_graph": {
     "nodes": {
+      "8aca12ae-f954-4ebf-b7cb-9058da2722ca": {
+        "id": "8aca12ae-f954-4ebf-b7cb-9058da2722ca",
+        "node_type": "sequence",
+        "position": {
+          "x": 620.0,
+          "y": 130.0
+        },
+        "properties": {},
+        "inputs": [
+          {
+            "id": "exec",
+            "name": "exec",
+            "pin_type": "Input",
+            "data_type": "Execution",
+            "connected_to": [
+              "b7a57657-81e9-4bde-ad5e-0aa529a38e9c"
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "Then0",
+            "name": "Then0",
+            "pin_type": "Output",
+            "data_type": "Execution",
+            "connected_to": [
+              "1a33fafa-d125-425b-96ae-f00ca044bb17"
+            ]
+          },
+          {
+            "id": "Then1",
+            "name": "Then1",
+            "pin_type": "Output",
+            "data_type": "Execution",
+            "connected_to": [
+              "18053435-1498-4aab-a522-07f1704c5fdb"
+            ]
+          },
+          {
+            "id": "Then2",
+            "name": "Then2",
+            "pin_type": "Output",
+            "data_type": "Execution",
+            "connected_to": [
+              "f67b9bad-5d2c-4bbb-abb5-121df1499096"
+            ]
+          },
+          {
+            "id": "Then3",
+            "name": "Then3",
+            "pin_type": "Output",
+            "data_type": "Execution",
+            "connected_to": [
+              "39348ec7-a0c5-487c-8822-d827f3d550d6"
+            ]
+          }
+        ]
+      },
       "f3943088-1597-4a1c-8558-7a31a26b2c92": {
         "id": "f3943088-1597-4a1c-8558-7a31a26b2c92",
         "node_type": "print_formatted",
@@ -115,12 +173,12 @@
         ],
         "outputs": []
       },
-      "abbfaa66-9729-4fdd-bf1b-5bd471464ff2": {
-        "id": "abbfaa66-9729-4fdd-bf1b-5bd471464ff2",
-        "node_type": "print_number",
+      "972ec112-6283-4bc6-8c68-c7712b43016a": {
+        "id": "972ec112-6283-4bc6-8c68-c7712b43016a",
+        "node_type": "sequence",
         "position": {
           "x": 970.0,
-          "y": 150.0
+          "y": 350.0
         },
         "properties": {},
         "inputs": [
@@ -130,24 +188,44 @@
             "pin_type": "Input",
             "data_type": "Execution",
             "connected_to": [
-              "18053435-1498-4aab-a522-07f1704c5fdb"
+              "39348ec7-a0c5-487c-8822-d827f3d550d6"
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "Then0",
+            "name": "Then0",
+            "pin_type": "Output",
+            "data_type": "Execution",
+            "connected_to": [
+              "ca93328c-38b4-4926-86d6-a4e2b5dee313"
             ]
           },
           {
-            "id": "value",
-            "name": "value",
-            "pin_type": "Input",
-            "data_type": {
-              "Data": {
-                "base_type": "f64",
-                "wrappers": [],
-                "is_wildcard": false
-              }
-            },
+            "id": "Then1",
+            "name": "Then1",
+            "pin_type": "Output",
+            "data_type": "Execution",
+            "connected_to": [
+              "edfe3393-8f36-4148-9550-3e50c697c7c3"
+            ]
+          },
+          {
+            "id": "Then2",
+            "name": "Then2",
+            "pin_type": "Output",
+            "data_type": "Execution",
+            "connected_to": []
+          },
+          {
+            "id": "Then3",
+            "name": "Then3",
+            "pin_type": "Output",
+            "data_type": "Execution",
             "connected_to": []
           }
-        ],
-        "outputs": []
+        ]
       },
       "a025784e-8399-4fd2-bbb1-64ffb3b75e2b": {
         "id": "a025784e-8399-4fd2-bbb1-64ffb3b75e2b",
@@ -203,12 +281,12 @@
           }
         ]
       },
-      "6b228e95-aba9-497f-b61d-d94e80465f88": {
-        "id": "6b228e95-aba9-497f-b61d-d94e80465f88",
-        "node_type": "print_bool",
+      "aef3fdca-6992-48a7-b16d-651ed2733547": {
+        "id": "aef3fdca-6992-48a7-b16d-651ed2733547",
+        "node_type": "print_number",
         "position": {
-          "x": 1770.0,
-          "y": 320.0
+          "x": 1380.0,
+          "y": 390.0
         },
         "properties": {},
         "inputs": [
@@ -218,7 +296,7 @@
             "pin_type": "Input",
             "data_type": "Execution",
             "connected_to": [
-              "0cc94452-8d51-47f6-8d16-8ea3aba724bd"
+              "edfe3393-8f36-4148-9550-3e50c697c7c3"
             ]
           },
           {
@@ -227,7 +305,7 @@
             "pin_type": "Input",
             "data_type": {
               "Data": {
-                "base_type": "bool",
+                "base_type": "f64",
                 "wrappers": [],
                 "is_wildcard": false
               }
@@ -236,64 +314,6 @@
           }
         ],
         "outputs": []
-      },
-      "8aca12ae-f954-4ebf-b7cb-9058da2722ca": {
-        "id": "8aca12ae-f954-4ebf-b7cb-9058da2722ca",
-        "node_type": "sequence",
-        "position": {
-          "x": 620.0,
-          "y": 130.0
-        },
-        "properties": {},
-        "inputs": [
-          {
-            "id": "exec",
-            "name": "exec",
-            "pin_type": "Input",
-            "data_type": "Execution",
-            "connected_to": [
-              "b7a57657-81e9-4bde-ad5e-0aa529a38e9c"
-            ]
-          }
-        ],
-        "outputs": [
-          {
-            "id": "Then0",
-            "name": "Then0",
-            "pin_type": "Output",
-            "data_type": "Execution",
-            "connected_to": [
-              "1a33fafa-d125-425b-96ae-f00ca044bb17"
-            ]
-          },
-          {
-            "id": "Then1",
-            "name": "Then1",
-            "pin_type": "Output",
-            "data_type": "Execution",
-            "connected_to": [
-              "18053435-1498-4aab-a522-07f1704c5fdb"
-            ]
-          },
-          {
-            "id": "Then2",
-            "name": "Then2",
-            "pin_type": "Output",
-            "data_type": "Execution",
-            "connected_to": [
-              "f67b9bad-5d2c-4bbb-abb5-121df1499096"
-            ]
-          },
-          {
-            "id": "Then3",
-            "name": "Then3",
-            "pin_type": "Output",
-            "data_type": "Execution",
-            "connected_to": [
-              "39348ec7-a0c5-487c-8822-d827f3d550d6"
-            ]
-          }
-        ]
       },
       "4429dec8-233f-4e50-95b9-77a2032dbf40": {
         "id": "4429dec8-233f-4e50-95b9-77a2032dbf40",
@@ -329,94 +349,6 @@
         ],
         "outputs": []
       },
-      "aef3fdca-6992-48a7-b16d-651ed2733547": {
-        "id": "aef3fdca-6992-48a7-b16d-651ed2733547",
-        "node_type": "print_number",
-        "position": {
-          "x": 1380.0,
-          "y": 390.0
-        },
-        "properties": {},
-        "inputs": [
-          {
-            "id": "exec",
-            "name": "exec",
-            "pin_type": "Input",
-            "data_type": "Execution",
-            "connected_to": [
-              "edfe3393-8f36-4148-9550-3e50c697c7c3"
-            ]
-          },
-          {
-            "id": "value",
-            "name": "value",
-            "pin_type": "Input",
-            "data_type": {
-              "Data": {
-                "base_type": "f64",
-                "wrappers": [],
-                "is_wildcard": false
-              }
-            },
-            "connected_to": []
-          }
-        ],
-        "outputs": []
-      },
-      "972ec112-6283-4bc6-8c68-c7712b43016a": {
-        "id": "972ec112-6283-4bc6-8c68-c7712b43016a",
-        "node_type": "sequence",
-        "position": {
-          "x": 970.0,
-          "y": 350.0
-        },
-        "properties": {},
-        "inputs": [
-          {
-            "id": "exec",
-            "name": "exec",
-            "pin_type": "Input",
-            "data_type": "Execution",
-            "connected_to": [
-              "39348ec7-a0c5-487c-8822-d827f3d550d6"
-            ]
-          }
-        ],
-        "outputs": [
-          {
-            "id": "Then0",
-            "name": "Then0",
-            "pin_type": "Output",
-            "data_type": "Execution",
-            "connected_to": [
-              "ca93328c-38b4-4926-86d6-a4e2b5dee313"
-            ]
-          },
-          {
-            "id": "Then1",
-            "name": "Then1",
-            "pin_type": "Output",
-            "data_type": "Execution",
-            "connected_to": [
-              "edfe3393-8f36-4148-9550-3e50c697c7c3"
-            ]
-          },
-          {
-            "id": "Then2",
-            "name": "Then2",
-            "pin_type": "Output",
-            "data_type": "Execution",
-            "connected_to": []
-          },
-          {
-            "id": "Then3",
-            "name": "Then3",
-            "pin_type": "Output",
-            "data_type": "Execution",
-            "connected_to": []
-          }
-        ]
-      },
       "477b16cc-6fd7-4268-85c5-4c83fb0402b9": {
         "id": "477b16cc-6fd7-4268-85c5-4c83fb0402b9",
         "node_type": "begin_play",
@@ -437,6 +369,74 @@
             ]
           }
         ]
+      },
+      "abbfaa66-9729-4fdd-bf1b-5bd471464ff2": {
+        "id": "abbfaa66-9729-4fdd-bf1b-5bd471464ff2",
+        "node_type": "print_number",
+        "position": {
+          "x": 970.0,
+          "y": 150.0
+        },
+        "properties": {},
+        "inputs": [
+          {
+            "id": "exec",
+            "name": "exec",
+            "pin_type": "Input",
+            "data_type": "Execution",
+            "connected_to": [
+              "18053435-1498-4aab-a522-07f1704c5fdb"
+            ]
+          },
+          {
+            "id": "value",
+            "name": "value",
+            "pin_type": "Input",
+            "data_type": {
+              "Data": {
+                "base_type": "f64",
+                "wrappers": [],
+                "is_wildcard": false
+              }
+            },
+            "connected_to": []
+          }
+        ],
+        "outputs": []
+      },
+      "6b228e95-aba9-497f-b61d-d94e80465f88": {
+        "id": "6b228e95-aba9-497f-b61d-d94e80465f88",
+        "node_type": "print_bool",
+        "position": {
+          "x": 1770.0,
+          "y": 320.0
+        },
+        "properties": {},
+        "inputs": [
+          {
+            "id": "exec",
+            "name": "exec",
+            "pin_type": "Input",
+            "data_type": "Execution",
+            "connected_to": [
+              "0cc94452-8d51-47f6-8d16-8ea3aba724bd"
+            ]
+          },
+          {
+            "id": "value",
+            "name": "value",
+            "pin_type": "Input",
+            "data_type": {
+              "Data": {
+                "base_type": "bool",
+                "wrappers": [],
+                "is_wildcard": false
+              }
+            },
+            "connected_to": []
+          }
+        ],
+        "outputs": []
       }
     },
     "connections": [
@@ -517,8 +517,8 @@
       "name": "Blueprint Graph",
       "description": "",
       "version": "1.0.0",
-      "created_at": "2026-05-27T18:25:51.368104+00:00",
-      "modified_at": "2026-05-27T18:25:51.368114+00:00"
+      "created_at": "2026-05-27T19:26:20.383944+00:00",
+      "modified_at": "2026-05-27T19:26:20.383967+00:00"
     },
     "comments": []
   }
