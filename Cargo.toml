@@ -16,6 +16,7 @@ serde_json = "1.0"
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
 helio = { git = "https://github.com/Far-Beyond-Pulsar/Helio" }
+winit = "0.30"
 
 [profile.dev]
 opt-level = 0
