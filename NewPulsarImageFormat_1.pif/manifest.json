@@ -1,0 +1,87 @@
+{
+  "pif_version": "1.0",
+  "canvas": {
+    "width": 1024,
+    "height": 1024,
+    "color_space": "sRGB"
+  },
+  "layers": [
+    {
+      "type": "raster",
+      "id": "background",
+      "name": "Background",
+      "visible": true,
+      "opacity": 1.0,
+      "blend_mode": "normal",
+      "tile_size": 256,
+      "tiles": {
+        "4_0": ".raster/layer_background_4_0.qoi",
+        "2_0": ".raster/layer_background_2_0.qoi",
+        "1_3": ".raster/layer_background_1_3.qoi",
+        "0_1": ".raster/layer_background_0_1.qoi",
+        "0_0": ".raster/layer_background_0_0.qoi",
+        "2_1": ".raster/layer_background_2_1.qoi",
+        "1_1": ".raster/layer_background_1_1.qoi",
+        "3_2": ".raster/layer_background_3_2.qoi",
+        "4_1": ".raster/layer_background_4_1.qoi",
+        "0_2": ".raster/layer_background_0_2.qoi",
+        "1_0": ".raster/layer_background_1_0.qoi",
+        "3_1": ".raster/layer_background_3_1.qoi",
+        "0_3": ".raster/layer_background_0_3.qoi",
+        "3_3": ".raster/layer_background_3_3.qoi",
+        "2_2": ".raster/layer_background_2_2.qoi",
+        "1_2": ".raster/layer_background_1_2.qoi",
+        "3_0": ".raster/layer_background_3_0.qoi",
+        "2_3": ".raster/layer_background_2_3.qoi"
+      }
+    },
+    {
+      "type": "raster",
+      "id": "layer-7af172cc-2bff-4092-8e69-6e3db2bfa9b9",
+      "name": "Layer 2",
+      "visible": true,
+      "opacity": 1.0,
+      "blend_mode": "normal",
+      "tile_size": 256,
+      "tiles": {}
+    },
+    {
+      "type": "raster",
+      "id": "layer-3f4bc2cf-08f9-408c-b007-81c9817a18e9",
+      "name": "Layer 3",
+      "visible": true,
+      "opacity": 1.0,
+      "blend_mode": "normal",
+      "tile_size": 256,
+      "tiles": {}
+    },
+    {
+      "type": "raster",
+      "id": "layer-a03af55b-6ec4-439d-b842-a49a6d363676",
+      "name": "Layer 4",
+      "visible": true,
+      "opacity": 1.0,
+      "blend_mode": "normal",
+      "tile_size": 256,
+      "tiles": {
+        "2_1": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_2_1.qoi",
+        "3_0": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_3_0.qoi",
+        "2_0": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_2_0.qoi",
+        "1_0": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_1_0.qoi",
+        "1_1": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_1_1.qoi",
+        "0_0": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_0_0.qoi",
+        "0_1": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_0_1.qoi"
+      }
+    },
+    {
+      "type": "raster",
+      "id": "layer-c34c39d2-f436-4bb4-b10a-8bb8af07c26a",
+      "name": "Layer 5",
+      "visible": true,
+      "opacity": 1.0,
+      "blend_mode": "normal",
+      "tile_size": 256,
+      "tiles": {}
+    }
+  ]
+}

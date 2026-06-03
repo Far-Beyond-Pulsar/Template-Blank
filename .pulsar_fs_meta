@@ -1,13 +1,5 @@
 {
   "files": {
-    "target": {
-      "color_override": {
-        "r": 255,
-        "g": 79,
-        "b": 79,
-        "a": 255
-      }
-    },
     "Cargo.toml": {
       "color_override": {
         "r": 255,
@@ -24,11 +16,11 @@
         "a": 255
       }
     },
-    "Pulsar.toml": {
+    "monkey195.fbx": {
       "color_override": {
-        "r": 179,
-        "g": 99,
-        "b": 255,
+        "r": 255,
+        "g": 79,
+        "b": 79,
         "a": 255
       }
     },
@@ -40,11 +32,27 @@
         "a": 255
       }
     },
-    "monkey195.fbx": {
+    "Cargo.lock": {
       "color_override": {
         "r": 255,
         "g": 79,
         "b": 79,
+        "a": 255
+      }
+    },
+    "target": {
+      "color_override": {
+        "r": 255,
+        "g": 79,
+        "b": 79,
+        "a": 255
+      }
+    },
+    "Pulsar.toml": {
+      "color_override": {
+        "r": 179,
+        "g": 99,
+        "b": 255,
         "a": 255
       }
     },
@@ -52,14 +60,6 @@
       "color_override": {
         "r": 255,
         "g": 160,
-        "b": 79,
-        "a": 255
-      }
-    },
-    "Cargo.lock": {
-      "color_override": {
-        "r": 255,
-        "g": 79,
         "b": 79,
         "a": 255
       }
