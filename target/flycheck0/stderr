@@ -1,57 +1,44 @@
-   0.389083042s  INFO prepare_target{force=false package_id=mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="mygame"}: cargo::core::compiler::fingerprint: dependency on `build_script_build` is newer than we are 1780526348.885882274s > 1780424685.376069228s "/Users/tristanpoland/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14"
-   0.416261958s  INFO prepare_target{force=false package_id=mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="mygame"}: cargo::core::compiler::fingerprint: fingerprint dirty for mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project)/Check { test: false }/TargetInner { name: "mygame", doc: true, ..: with_path("/Users/tristanpoland/Documents/blank_project/src/main.rs", Edition2021) }
-   0.416288083s  INFO prepare_target{force=false package_id=mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="mygame"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(638) }
-   0.441081125s  INFO prepare_target{force=false package_id=pulsar_game v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="pulsar_game"}: cargo::core::compiler::fingerprint: fingerprint dirty for pulsar_game v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("pulsar_game", ["lib"], "/Users/tristanpoland/.cargo/git/checkouts/pulsar-native-c9dbe90ebb069934/7de3c60/crates/pulsar_game/src/lib.rs", Edition2021) }
-   0.441111833s  INFO prepare_target{force=false package_id=pulsar_game v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="pulsar_game"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(171) }
-   0.453049625s  INFO prepare_target{force=false package_id=engine_state v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="engine_state"}: cargo::core::compiler::fingerprint: fingerprint dirty for engine_state v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("engine_state", ["lib"], "/Users/tristanpoland/.cargo/git/checkouts/pulsar-native-c9dbe90ebb069934/7de3c60/crates/engine_state/src/lib.rs", Edition2021) }
-   0.453062167s  INFO prepare_target{force=false package_id=engine_state v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="engine_state"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(930) }
-   0.454705292s  INFO prepare_target{force=false package_id=gpui-ce v1.0.0 (https://github.com/Far-Beyond-Pulsar/WGPUI?rev=0b555af11e80565429af9405ffd9d17fa832e3fe#0b555af1) target="gpui"}: cargo::core::compiler::fingerprint: fingerprint dirty for gpui-ce v1.0.0 (https://github.com/Far-Beyond-Pulsar/WGPUI?rev=0b555af11e80565429af9405ffd9d17fa832e3fe#0b555af1)/Check { test: false }/TargetInner { doctest: false, ..: lib_target("gpui", ["lib"], "/Users/tristanpoland/.cargo/git/checkouts/wgpui-b1c0af3ec55ee615/0b555af/src/gpui.rs", Edition2024) }
-   0.454713000s  INFO prepare_target{force=false package_id=gpui-ce v1.0.0 (https://github.com/Far-Beyond-Pulsar/WGPUI?rev=0b555af11e80565429af9405ffd9d17fa832e3fe#0b555af1) target="gpui"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(268) }
-   0.466899667s  INFO prepare_target{force=false package_id=gpui_http_client v0.2.2 target="gpui_http_client"}: cargo::core::compiler::fingerprint: fingerprint dirty for gpui_http_client v0.2.2/Check { test: false }/TargetInner { ..: lib_target("gpui_http_client", ["lib"], "/Users/tristanpoland/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gpui_http_client-0.2.2/src/http_client.rs", Edition2024) }
-   0.466912833s  INFO prepare_target{force=false package_id=gpui_http_client v0.2.2 target="gpui_http_client"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(1019) }
-   0.481857875s  INFO prepare_target{force=false package_id=zed-reqwest v0.12.15-zed target="zed_reqwest"}: cargo::core::compiler::fingerprint: fingerprint dirty for zed-reqwest v0.12.15-zed/Check { test: false }/TargetInner { ..: lib_target("zed_reqwest", ["lib"], "/Users/tristanpoland/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zed-reqwest-0.12.15-zed/src/lib.rs", Edition2021) }
-   0.481869458s  INFO prepare_target{force=false package_id=zed-reqwest v0.12.15-zed target="zed_reqwest"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(888) }
-   0.485647333s  INFO prepare_target{force=false package_id=hyper-rustls v0.27.9 target="hyper_rustls"}: cargo::core::compiler::fingerprint: fingerprint dirty for hyper-rustls v0.27.9/Check { test: false }/TargetInner { ..: lib_target("hyper_rustls", ["lib"], "/Users/tristanpoland/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-rustls-0.27.9/src/lib.rs", Edition2021) }
-   0.485657167s  INFO prepare_target{force=false package_id=hyper-rustls v0.27.9 target="hyper_rustls"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(888) }
-   0.486297542s  INFO prepare_target{force=false package_id=rustls v0.23.40 target="rustls"}: cargo::core::compiler::fingerprint: fingerprint dirty for rustls v0.23.40/Check { test: false }/TargetInner { ..: lib_target("rustls", ["lib"], "/Users/tristanpoland/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.40/src/lib.rs", Edition2021) }
-   0.486301667s  INFO prepare_target{force=false package_id=rustls v0.23.40 target="rustls"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(700) }
-   0.486702625s  INFO prepare_target{force=false package_id=ring v0.17.14 target="ring"}: cargo::core::compiler::fingerprint: fingerprint dirty for ring v0.17.14/Check { test: false }/TargetInner { ..: lib_target("ring", ["lib"], "/Users/tristanpoland/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/lib.rs", Edition2021) }
-   0.486706208s  INFO prepare_target{force=false package_id=ring v0.17.14 target="ring"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(702) }
-   0.488015917s  INFO prepare_target{force=false package_id=rustls-webpki v0.103.13 target="webpki"}: cargo::core::compiler::fingerprint: fingerprint dirty for rustls-webpki v0.103.13/Check { test: false }/TargetInner { ..: lib_target("webpki", ["lib"], "/Users/tristanpoland/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-webpki-0.103.13/src/lib.rs", Edition2021) }
-   0.488019125s  INFO prepare_target{force=false package_id=rustls-webpki v0.103.13 target="webpki"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(700) }
-   0.488848083s  INFO prepare_target{force=false package_id=tokio-rustls v0.26.4 target="tokio_rustls"}: cargo::core::compiler::fingerprint: fingerprint dirty for tokio-rustls v0.26.4/Check { test: false }/TargetInner { ..: lib_target("tokio_rustls", ["lib"], "/Users/tristanpoland/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.26.4/src/lib.rs", Edition2021) }
-   0.488851292s  INFO prepare_target{force=false package_id=tokio-rustls v0.26.4 target="tokio_rustls"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(735) }
-   0.501933875s  INFO prepare_target{force=false package_id=type_db v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="type_db"}: cargo::core::compiler::fingerprint: fingerprint dirty for type_db v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("type_db", ["lib"], "/Users/tristanpoland/.cargo/git/checkouts/pulsar-native-c9dbe90ebb069934/7de3c60/crates/type_db/src/lib.rs", Edition2021) }
-   0.501943708s  INFO prepare_target{force=false package_id=type_db v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="type_db"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(593) }
-   0.503244167s  INFO prepare_target{force=false package_id=plugin_editor_api v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="plugin_editor_api"}: cargo::core::compiler::fingerprint: fingerprint dirty for plugin_editor_api v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("plugin_editor_api", ["lib", "cdylib"], "/Users/tristanpoland/.cargo/git/checkouts/pulsar-native-c9dbe90ebb069934/7de3c60/crates/plugin_editor_api/src/lib.rs", Edition2021) }
-   0.503253750s  INFO prepare_target{force=false package_id=plugin_editor_api v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="plugin_editor_api"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(937) }
-   0.504369625s  INFO prepare_target{force=false package_id=ui v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="ui"}: cargo::core::compiler::fingerprint: fingerprint dirty for ui v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)/Check { test: false }/TargetInner { name_inferred: true, doctest: false, ..: lib_target("ui", ["lib"], "/Users/tristanpoland/.cargo/git/checkouts/pulsar-native-c9dbe90ebb069934/7de3c60/crates/ui/src/lib.rs", Edition2021) }
-   0.504376333s  INFO prepare_target{force=false package_id=ui v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="ui"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(260) }
-   0.515092500s  INFO prepare_target{force=false package_id=pulsar_lsp v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="pulsar_lsp"}: cargo::core::compiler::fingerprint: fingerprint dirty for pulsar_lsp v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("pulsar_lsp", ["lib"], "/Users/tristanpoland/.cargo/git/checkouts/pulsar-native-c9dbe90ebb069934/7de3c60/crates/pulsar_lsp/src/lib.rs", Edition2021) }
-   0.515102333s  INFO prepare_target{force=false package_id=pulsar_lsp v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="pulsar_lsp"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(260) }
-   0.516060333s  INFO prepare_target{force=false package_id=pulsar_replication v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="pulsar_replication"}: cargo::core::compiler::fingerprint: fingerprint dirty for pulsar_replication v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)/Check { test: false }/TargetInner { name_inferred: true, doctest: false, ..: lib_target("pulsar_replication", ["lib"], "/Users/tristanpoland/.cargo/git/checkouts/pulsar-native-c9dbe90ebb069934/7de3c60/crates/pulsar_replication/src/lib.rs", Edition2021) }
-   0.516065792s  INFO prepare_target{force=false package_id=pulsar_replication v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="pulsar_replication"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(260) }
-   0.518608250s  INFO prepare_target{force=false package_id=window_manager v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="window_manager"}: cargo::core::compiler::fingerprint: fingerprint dirty for window_manager v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("window_manager", ["lib"], "/Users/tristanpoland/.cargo/git/checkouts/pulsar-native-c9dbe90ebb069934/7de3c60/crates/window_manager/src/lib.rs", Edition2021) }
-   0.518614417s  INFO prepare_target{force=false package_id=window_manager v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603) target="window_manager"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(260) }
-   0.523813167s  INFO prepare_target{force=false package_id=mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="mygame"}: cargo::core::compiler::fingerprint: fingerprint dirty for mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project)/Check { test: true }/TargetInner { name: "mygame", doc: true, ..: with_path("/Users/tristanpoland/Documents/blank_project/src/main.rs", Edition2021) }
-   0.523823000s  INFO prepare_target{force=false package_id=mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="mygame"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(638) }
-    Checking ring v0.17.14
-    Checking rustls-webpki v0.103.13
-    Checking rustls v0.23.40
-    Checking tokio-rustls v0.26.4
-    Checking hyper-rustls v0.27.9
-    Checking zed-reqwest v0.12.15-zed
-    Checking gpui_http_client v0.2.2
-    Checking gpui-ce v1.0.0 (https://github.com/Far-Beyond-Pulsar/WGPUI?rev=0b555af11e80565429af9405ffd9d17fa832e3fe#0b555af1)
-    Checking pulsar_replication v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)
-    Checking window_manager v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)
-    Checking pulsar_lsp v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)
-    Checking ui v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)
-    Checking plugin_editor_api v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)
-    Checking type_db v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)
-    Checking engine_state v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)
-    Checking pulsar_game v0.1.0 (https://github.com/Far-Beyond-Pulsar/Pulsar-Native#7de3c603)
+   0.767022250s  INFO prepare_target{force=false package_id=mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="mygame"}: cargo::core::compiler::fingerprint: stale: changed "/Users/tristanpoland/Documents/blank_project/src/main.rs"
+   0.767079166s  INFO prepare_target{force=false package_id=mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="mygame"}: cargo::core::compiler::fingerprint:           (vs) "/Users/tristanpoland/Documents/blank_project/target/debug/.fingerprint/mygame-f2f49f10bf337d1c/dep-bin-mygame"
+   0.767083541s  INFO prepare_target{force=false package_id=mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="mygame"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1780895102, nanos: 786097675 } < FileTime { seconds: 1780947122, nanos: 140175584 }
+   0.768497416s  INFO prepare_target{force=false package_id=mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="mygame"}: cargo::core::compiler::fingerprint: fingerprint dirty for mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project)/Check { test: false }/TargetInner { name: "mygame", doc: true, ..: with_path("/Users/tristanpoland/Documents/blank_project/src/main.rs", Edition2021) }
+   0.768521166s  INFO prepare_target{force=false package_id=mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="mygame"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/tristanpoland/Documents/blank_project/target/debug/.fingerprint/mygame-f2f49f10bf337d1c/dep-bin-mygame", reference_mtime: FileTime { seconds: 1780895102, nanos: 786097675 }, stale: "/Users/tristanpoland/Documents/blank_project/src/main.rs", stale_mtime: FileTime { seconds: 1780947122, nanos: 140175584 } }))
+   0.990059333s  INFO prepare_target{force=false package_id=mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="mygame"}: cargo::core::compiler::fingerprint: stale: missing "/Users/tristanpoland/Documents/blank_project/src/classes/MyBP/mod.rs"
+   0.990358583s  INFO prepare_target{force=false package_id=mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="mygame"}: cargo::core::compiler::fingerprint: fingerprint dirty for mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project)/Check { test: true }/TargetInner { name: "mygame", doc: true, ..: with_path("/Users/tristanpoland/Documents/blank_project/src/main.rs", Edition2021) }
+   0.990374375s  INFO prepare_target{force=false package_id=mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project) target="mygame"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(MissingFile { path: "/Users/tristanpoland/Documents/blank_project/src/classes/MyBP/mod.rs" }))
+
+warning: deprecated argument(s) passed to #[pulsar_type]
+ --> /Users/tristanpoland/.cargo/git/checkouts/pulsar-native-c9dbe90ebb069934/0634d6a/crates/pulsar_rendering/src/components/script_component.rs:151:5
+ | ─────────────────────────────
+ | at:/Users/tristanpoland/.cargo/git/checkouts/pulsar-native-c9dbe90ebb069934/0634d6a/crates/pulsar_rendering/src/components/script_component.rs:151:5
+ | in #[pulsar_type(primitive, ...)]: argument is silently ignored
+ | at:/Users/tristanpoland/.cargo/git/checkouts/pulsar-native-c9dbe90ebb069934/0634d6a/crates/pulsar_rendering/src/components/script_component.rs:152:5
+ | in #[pulsar_type(structure = ..., ...)]: argument is silently ignored
+ |
+ | note: the primitive / structure type distinction has been removed
+ |       all types now follow a single unified registration path
+ |
+ | help:  #[pulsar_type(primitive, ...)]  →  #[pulsar_type(...)]
+ | help:  #[pulsar_type(structure = ..., ...)]  →  #[pulsar_type(...)]
+ | ─────────────────────────────
+
+
+warning: deprecated argument(s) passed to #[pulsar_type]
+ --> /Users/tristanpoland/.cargo/git/checkouts/pulsar-native-c9dbe90ebb069934/0634d6a/crates/pulsar_rendering/src/components/static_mesh_component.rs:156:5
+ | ─────────────────────────────
+ | at:/Users/tristanpoland/.cargo/git/checkouts/pulsar-native-c9dbe90ebb069934/0634d6a/crates/pulsar_rendering/src/components/static_mesh_component.rs:156:5
+ | in #[pulsar_type(primitive, ...)]: argument is silently ignored
+ | at:/Users/tristanpoland/.cargo/git/checkouts/pulsar-native-c9dbe90ebb069934/0634d6a/crates/pulsar_rendering/src/components/static_mesh_component.rs:157:5
+ | in #[pulsar_type(structure = ..., ...)]: argument is silently ignored
+ |
+ | note: the primitive / structure type distinction has been removed
+ |       all types now follow a single unified registration path
+ |
+ | help:  #[pulsar_type(primitive, ...)]  →  #[pulsar_type(...)]
+ | help:  #[pulsar_type(structure = ..., ...)]  →  #[pulsar_type(...)]
+ | ─────────────────────────────
+
     Checking mygame v0.1.0 (/Users/tristanpoland/Documents/blank_project)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 13.45s
-warning: the following packages contain code that will be rejected by a future version of Rust: block v0.1.6
-note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+error: could not compile `mygame` (bin "mygame") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `mygame` (bin "mygame" test) due to 1 previous error

@@ -28,10 +28,41 @@
       "children": [],
       "scene_path": "DuelObject",
       "props": {
+        "use_temperature": false,
+        "per_view_visibility_mask": 65535,
+        "affects_reflections": true,
+        "light_function_disabled_brightness": 0.0,
+        "outer_cone_angle": 45.0,
+        "mobile_quality_level": 2,
+        "ray_tracing_inclusion": true,
         "material": "None",
-        "shape": "Box",
-        "range": 40.0,
-        "size": "unsupported",
+        "lighting_channel_0": true,
+        "cast_contact_shadows": false,
+        "intensity_units": 1,
+        "fog_inscattering_intensity": 1.0,
+        "color": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "volumetric_scattering_intensity": 1.0,
+        "enabled": true,
+        "color_saturation": 1.0,
+        "inner_cone_angle": 30.0,
+        "light_function_material": "",
+        "exposure_compensation": 0.0,
+        "is_trigger": true,
+        "affects_world": true,
+        "light_function_fade_distance": 0.0,
+        "color_contrast": 1.0,
+        "max_distance_fade_range": 0.0,
+        "shadow_slope_bias": 0.5,
+        "temperature_kelvin": 6500.0,
+        "affects_translucency": true,
+        "affects_global_illumination": true,
+        "shadow_cache_mode": 0,
+        "indirect_intensity": 1.0,
         "__component_instances": [
           {
             "index": 0,
@@ -44,7 +75,8 @@
                 1.0
               ],
               "intensity": 7.0,
-              "range": 40.0
+              "range": 40.0,
+              "cast_shadows": false
             }
           },
           {
@@ -69,17 +101,46 @@
             }
           }
         ],
-        "mesh_asset": "meshes/primitives/SM_Sphere.fbx",
+        "source_length": 0.0,
+        "source_radius": 0.0,
+        "light_type": 1,
+        "falloff_start": 0.0,
         "movability": "None",
-        "is_trigger": true,
-        "color": [
+        "shadow_softness": 1.0,
+        "mesh_asset": "meshes/primitives/SM_Sphere.fbx",
+        "attenuation_exponent": 2.0,
+        "contact_shadow_non_shadow_casting_intensity": 0.0,
+        "diffuse_scale": 1.0,
+        "range": 40.0,
+        "temperature_tint": 0.0,
+        "max_draw_distance": 0.0,
+        "use_physical_light_color": true,
+        "shadow_bias": 0.5,
+        "shadow_filter_sharpen": 0.0,
+        "shadow_resolution_scale": 1.0,
+        "affects_volumetric_fog": true,
+        "light_channels": 255,
+        "lighting_channel_2": false,
+        "shape": "Box",
+        "cast_dynamic_shadows": true,
+        "specular_scale": 1.0,
+        "cast_static_shadows": true,
+        "cast_volumetric_shadow": true,
+        "offset": "unsupported",
+        "volumetric_shadow_intensity": 1.0,
+        "lighting_channel_1": false,
+        "cast_shadows": false,
+        "size": "unsupported",
+        "inverse_squared_falloff": true,
+        "contact_shadow_length": 0.0,
+        "light_function_scale": [
           1.0,
-          0.0,
-          0.0,
+          1.0,
           1.0
         ],
-        "offset": "unsupported",
-        "intensity": 7.0
+        "intensity": 7.0,
+        "shadow_normal_bias": 0.5,
+        "virtual_shadow_map_enabled": true
       }
     },
     {
@@ -111,16 +172,67 @@
       "children": [],
       "scene_path": "Blue Light",
       "props": {
-        "size": "unsupported",
         "color": [
           0.058823585510253906,
           0.0,
           1.0,
           1.0
         ],
-        "range": 8.0,
+        "size": "unsupported",
+        "contact_shadow_length": 0.0,
+        "offset": "unsupported",
+        "per_view_visibility_mask": 65535,
+        "exposure_compensation": 0.0,
+        "shadow_bias": 0.5,
+        "shadow_resolution_scale": 1.0,
+        "cast_contact_shadows": false,
+        "ray_tracing_inclusion": true,
+        "temperature_kelvin": 6500.0,
+        "light_function_material": "",
+        "cast_dynamic_shadows": true,
+        "light_type": 1,
+        "shadow_softness": 1.0,
+        "cast_volumetric_shadow": true,
+        "light_function_disabled_brightness": 0.0,
+        "fog_inscattering_intensity": 1.0,
+        "volumetric_shadow_intensity": 1.0,
+        "affects_reflections": true,
+        "contact_shadow_non_shadow_casting_intensity": 0.0,
+        "outer_cone_angle": 45.0,
+        "falloff_start": 0.0,
+        "affects_global_illumination": true,
+        "inner_cone_angle": 30.0,
+        "color_saturation": 1.0,
+        "mobile_quality_level": 2,
+        "use_temperature": false,
+        "cast_shadows": false,
+        "affects_translucency": true,
         "is_trigger": false,
         "shape": "Box",
+        "virtual_shadow_map_enabled": true,
+        "enabled": true,
+        "affects_world": true,
+        "use_physical_light_color": true,
+        "specular_scale": 1.0,
+        "lighting_channel_2": false,
+        "shadow_normal_bias": 0.5,
+        "lighting_channel_1": false,
+        "shadow_cache_mode": 0,
+        "diffuse_scale": 1.0,
+        "light_function_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity_units": 1,
+        "intensity": 8.0,
+        "light_function_fade_distance": 0.0,
+        "indirect_intensity": 1.0,
+        "cast_static_shadows": true,
+        "max_draw_distance": 0.0,
+        "shadow_slope_bias": 0.5,
+        "source_radius": 0.0,
+        "source_length": 0.0,
         "__component_instances": [
           {
             "index": 0,
@@ -138,8 +250,17 @@
             }
           }
         ],
-        "offset": "unsupported",
-        "intensity": 8.0
+        "affects_volumetric_fog": true,
+        "lighting_channel_0": true,
+        "light_channels": 255,
+        "color_contrast": 1.0,
+        "inverse_squared_falloff": true,
+        "temperature_tint": 0.0,
+        "volumetric_scattering_intensity": 1.0,
+        "range": 8.0,
+        "shadow_filter_sharpen": 0.0,
+        "attenuation_exponent": 2.0,
+        "max_distance_fade_range": 0.0
       }
     },
     {
@@ -171,12 +292,11 @@
       "children": [],
       "scene_path": "Pink Light",
       "props": {
-        "color": [
-          0.9058823585510254,
-          0.09803923964500427,
-          0.35686275362968445,
-          1.0
-        ],
+        "indirect_intensity": 1.0,
+        "shadow_bias": 0.5,
+        "inverse_squared_falloff": true,
+        "range": 10.0,
+        "affects_world": true,
         "__component_instances": [
           {
             "index": 0,
@@ -194,8 +314,69 @@
             }
           }
         ],
+        "per_view_visibility_mask": 65535,
+        "shadow_resolution_scale": 1.0,
+        "cast_shadows": false,
+        "cast_volumetric_shadow": true,
+        "use_temperature": false,
+        "affects_global_illumination": true,
+        "contact_shadow_length": 0.0,
+        "light_type": 1,
+        "color_contrast": 1.0,
+        "temperature_kelvin": 6500.0,
+        "falloff_start": 0.0,
+        "shadow_normal_bias": 0.5,
+        "light_channels": 255,
+        "lighting_channel_1": false,
+        "affects_volumetric_fog": true,
         "intensity": 8.0,
-        "range": 10.0
+        "color": [
+          0.9058823585510254,
+          0.09803923964500427,
+          0.35686275362968445,
+          1.0
+        ],
+        "use_physical_light_color": true,
+        "mobile_quality_level": 2,
+        "cast_dynamic_shadows": true,
+        "exposure_compensation": 0.0,
+        "virtual_shadow_map_enabled": true,
+        "color_saturation": 1.0,
+        "fog_inscattering_intensity": 1.0,
+        "shadow_slope_bias": 0.5,
+        "light_function_material": "",
+        "shadow_filter_sharpen": 0.0,
+        "light_function_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "lighting_channel_0": true,
+        "cast_contact_shadows": false,
+        "shadow_softness": 1.0,
+        "contact_shadow_non_shadow_casting_intensity": 0.0,
+        "diffuse_scale": 1.0,
+        "volumetric_scattering_intensity": 1.0,
+        "outer_cone_angle": 45.0,
+        "temperature_tint": 0.0,
+        "source_radius": 0.0,
+        "affects_reflections": true,
+        "enabled": true,
+        "max_distance_fade_range": 0.0,
+        "ray_tracing_inclusion": true,
+        "light_function_fade_distance": 0.0,
+        "volumetric_shadow_intensity": 1.0,
+        "intensity_units": 1,
+        "attenuation_exponent": 2.0,
+        "lighting_channel_2": false,
+        "specular_scale": 1.0,
+        "max_draw_distance": 0.0,
+        "cast_static_shadows": true,
+        "source_length": 0.0,
+        "affects_translucency": true,
+        "light_function_disabled_brightness": 0.0,
+        "shadow_cache_mode": 0,
+        "inner_cone_angle": 30.0
       }
     },
     {
@@ -227,9 +408,6 @@
       "children": [],
       "scene_path": "Ground",
       "props": {
-        "material": "None",
-        "mesh_asset": "meshes/primitives/SM_Cube.fbx",
-        "movability": "None",
         "__component_instances": [
           {
             "index": 0,
@@ -242,7 +420,10 @@
               "bounds": "None"
             }
           }
-        ]
+        ],
+        "movability": "None",
+        "material": "None",
+        "mesh_asset": "meshes/primitives/SM_Cube.fbx"
       }
     },
     {
@@ -316,7 +497,6 @@
       "scene_path": "Stage Wall",
       "props": {
         "mesh_asset": "meshes/primitives/SM_Cube.fbx",
-        "icon_asset": ".pulsar/thumbnails/ed3d2121f7af4256.png",
         "__component_instances": [
           {
             "index": 0,
@@ -325,7 +505,8 @@
               "mesh_asset": "meshes/primitives/SM_Cube.fbx"
             }
           }
-        ]
+        ],
+        "icon_asset": ".pulsar/thumbnails/ed3d2121f7af4256.png"
       }
     },
     {
@@ -398,7 +579,70 @@
       "children": [],
       "scene_path": "Point Light",
       "props": {
+        "exposure_compensation": 0.0,
+        "falloff_start": 0.0,
+        "cast_dynamic_shadows": true,
+        "source_length": 0.0,
+        "max_distance_fade_range": 0.0,
+        "lighting_channel_2": false,
+        "lighting_channel_0": true,
+        "intensity": 1.0,
+        "cast_shadows": true,
+        "light_function_material": "",
+        "affects_reflections": true,
+        "cast_contact_shadows": false,
+        "attenuation_exponent": 2.0,
+        "ray_tracing_inclusion": true,
+        "shadow_filter_sharpen": 0.0,
+        "color_saturation": 1.0,
+        "contact_shadow_non_shadow_casting_intensity": 0.0,
+        "light_type": 1,
+        "light_function_fade_distance": 0.0,
+        "volumetric_shadow_intensity": 1.0,
+        "contact_shadow_length": 0.0,
+        "mobile_quality_level": 2,
+        "shadow_resolution_scale": 1.0,
+        "color": [
+          0.49019622802734375,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "inner_cone_angle": 30.0,
+        "affects_global_illumination": true,
+        "virtual_shadow_map_enabled": true,
+        "intensity_units": 1,
+        "affects_translucency": true,
+        "cast_static_shadows": true,
+        "affects_volumetric_fog": true,
+        "fog_inscattering_intensity": 1.0,
+        "light_function_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_radius": 0.0,
+        "use_temperature": false,
+        "use_physical_light_color": true,
+        "shadow_normal_bias": 0.5,
+        "enabled": true,
+        "outer_cone_angle": 45.0,
+        "indirect_intensity": 1.0,
+        "shadow_slope_bias": 0.5,
+        "light_function_disabled_brightness": 0.0,
+        "cast_volumetric_shadow": true,
+        "shadow_softness": 1.0,
         "range": 100.0,
+        "color_contrast": 1.0,
+        "volumetric_scattering_intensity": 1.0,
+        "lighting_channel_1": false,
+        "diffuse_scale": 1.0,
+        "inverse_squared_falloff": true,
+        "max_draw_distance": 0.0,
+        "temperature_kelvin": 6500.0,
+        "per_view_visibility_mask": 65535,
+        "shadow_cache_mode": 0,
+        "shadow_bias": 0.5,
         "__component_instances": [
           {
             "index": 0,
@@ -415,13 +659,10 @@
             }
           }
         ],
-        "color": [
-          0.49019622802734375,
-          0.0,
-          1.0,
-          1.0
-        ],
-        "intensity": 1.0
+        "affects_world": true,
+        "light_channels": 255,
+        "specular_scale": 1.0,
+        "temperature_tint": 0.0
       }
     },
     {
@@ -565,17 +806,47 @@
       "children": [],
       "scene_path": "Point Light",
       "props": {
-        "size": "unsupported",
-        "range": 100.0,
-        "offset": "unsupported",
-        "is_trigger": false,
+        "color_saturation": 1.0,
+        "inverse_squared_falloff": true,
+        "color_contrast": 1.0,
+        "shadow_bias": 0.5,
+        "temperature_tint": 0.0,
+        "exposure_compensation": 0.0,
+        "contact_shadow_length": 0.0,
+        "use_temperature": false,
+        "light_type": 1,
+        "shadow_cache_mode": 0,
+        "light_function_material": "",
+        "source_radius": 0.0,
+        "max_distance_fade_range": 0.0,
+        "shadow_resolution_scale": 1.0,
+        "falloff_start": 0.0,
+        "lighting_channel_2": false,
+        "affects_translucency": true,
+        "per_view_visibility_mask": 65535,
+        "cast_static_shadows": true,
+        "shadow_softness": 1.0,
+        "fog_inscattering_intensity": 1.0,
+        "cast_volumetric_shadow": true,
+        "volumetric_shadow_intensity": 1.0,
+        "volumetric_scattering_intensity": 1.0,
+        "lighting_channel_0": true,
+        "inner_cone_angle": 30.0,
+        "shadow_slope_bias": 0.5,
+        "affects_reflections": true,
+        "shadow_filter_sharpen": 0.0,
+        "use_physical_light_color": true,
+        "light_channels": 255,
+        "attenuation_exponent": 2.0,
+        "affects_volumetric_fog": true,
+        "intensity": 2.0,
+        "cast_shadows": true,
         "color": [
           0.6078431606292725,
           1.0,
           0.0,
           1.0
         ],
-        "shape": "Box",
         "__component_instances": [
           {
             "index": 0,
@@ -602,7 +873,37 @@
             }
           }
         ],
-        "intensity": 2.0
+        "indirect_intensity": 1.0,
+        "mobile_quality_level": 2,
+        "outer_cone_angle": 45.0,
+        "range": 100.0,
+        "light_function_disabled_brightness": 0.0,
+        "size": "unsupported",
+        "max_draw_distance": 0.0,
+        "is_trigger": false,
+        "enabled": true,
+        "shadow_normal_bias": 0.5,
+        "lighting_channel_1": false,
+        "affects_world": true,
+        "light_function_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "contact_shadow_non_shadow_casting_intensity": 0.0,
+        "temperature_kelvin": 6500.0,
+        "affects_global_illumination": true,
+        "light_function_fade_distance": 0.0,
+        "cast_contact_shadows": false,
+        "shape": "Box",
+        "offset": "unsupported",
+        "ray_tracing_inclusion": true,
+        "cast_dynamic_shadows": true,
+        "virtual_shadow_map_enabled": true,
+        "diffuse_scale": 1.0,
+        "source_length": 0.0,
+        "specular_scale": 1.0,
+        "intensity_units": 1
       }
     },
     {
@@ -632,10 +933,41 @@
       "children": [],
       "scene_path": "DuelObject",
       "props": {
+        "use_temperature": false,
+        "per_view_visibility_mask": 65535,
+        "affects_reflections": true,
+        "light_function_disabled_brightness": 0.0,
+        "outer_cone_angle": 45.0,
+        "mobile_quality_level": 2,
+        "ray_tracing_inclusion": true,
         "material": "None",
-        "shape": "Box",
-        "range": 40.0,
-        "size": "unsupported",
+        "fog_inscattering_intensity": 1.0,
+        "cast_contact_shadows": false,
+        "intensity_units": 1,
+        "lighting_channel_0": true,
+        "color": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "volumetric_scattering_intensity": 1.0,
+        "enabled": true,
+        "color_saturation": 1.0,
+        "inner_cone_angle": 30.0,
+        "light_function_material": "",
+        "exposure_compensation": 0.0,
+        "is_trigger": true,
+        "light_function_fade_distance": 0.0,
+        "affects_world": true,
+        "color_contrast": 1.0,
+        "max_distance_fade_range": 0.0,
+        "shadow_slope_bias": 0.5,
+        "temperature_kelvin": 6500.0,
+        "affects_global_illumination": true,
+        "indirect_intensity": 1.0,
+        "shadow_cache_mode": 0,
+        "affects_translucency": true,
         "__component_instances": [
           {
             "index": 0,
@@ -648,7 +980,8 @@
                 1.0
               ],
               "intensity": 7.0,
-              "range": 40.0
+              "range": 40.0,
+              "cast_shadows": false
             }
           },
           {
@@ -673,17 +1006,46 @@
             }
           }
         ],
-        "mesh_asset": "meshes/primitives/SM_Sphere.fbx",
+        "source_length": 0.0,
+        "source_radius": 0.0,
+        "light_type": 1,
+        "falloff_start": 0.0,
         "movability": "None",
-        "is_trigger": true,
-        "color": [
+        "shadow_softness": 1.0,
+        "mesh_asset": "meshes/primitives/SM_Sphere.fbx",
+        "attenuation_exponent": 2.0,
+        "contact_shadow_non_shadow_casting_intensity": 0.0,
+        "diffuse_scale": 1.0,
+        "range": 40.0,
+        "max_draw_distance": 0.0,
+        "temperature_tint": 0.0,
+        "use_physical_light_color": true,
+        "shadow_bias": 0.5,
+        "shadow_filter_sharpen": 0.0,
+        "shadow_resolution_scale": 1.0,
+        "affects_volumetric_fog": true,
+        "lighting_channel_2": false,
+        "light_channels": 255,
+        "shape": "Box",
+        "cast_static_shadows": true,
+        "cast_dynamic_shadows": true,
+        "specular_scale": 1.0,
+        "cast_volumetric_shadow": true,
+        "offset": "unsupported",
+        "volumetric_shadow_intensity": 1.0,
+        "lighting_channel_1": false,
+        "cast_shadows": false,
+        "size": "unsupported",
+        "inverse_squared_falloff": true,
+        "contact_shadow_length": 0.0,
+        "light_function_scale": [
           1.0,
-          0.0,
-          0.0,
+          1.0,
           1.0
         ],
-        "offset": "unsupported",
-        "intensity": 7.0
+        "intensity": 7.0,
+        "shadow_normal_bias": 0.5,
+        "virtual_shadow_map_enabled": true
       }
     },
     {
@@ -766,15 +1128,6 @@
     }
   ],
   "components": {
-    "object_8": [
-      {
-        "class_name": "StaticMeshComponent",
-        "enabled": true,
-        "data": {
-          "mesh_asset": "meshes/primitives/SM_Cube.fbx"
-        }
-      }
-    ],
     "object_10": [
       {
         "class_name": "LightComponent",
@@ -791,57 +1144,22 @@
         }
       }
     ],
-    "object_4": [
-      {
-        "class_name": "LightComponent",
-        "enabled": true,
-        "data": {
-          "color": [
-            0.9058823585510254,
-            0.09803923964500429,
-            0.35686275362968445,
-            1.0
-          ],
-          "intensity": 8.0,
-          "range": 10.0,
-          "cast_shadows": false
-        }
-      }
-    ],
-    "object_2": [
-      {
-        "class_name": "LightComponent",
-        "enabled": true,
-        "data": {
-          "color": [
-            1.0,
-            0.0,
-            0.0,
-            1.0
-          ],
-          "intensity": 7.0,
-          "range": 40.0
-        }
-      },
-      {
-        "class_name": "ColliderDescriptor",
-        "enabled": true,
-        "data": {
-          "shape": "Box",
-          "offset": "unsupported",
-          "size": "unsupported",
-          "is_trigger": true
-        }
-      },
+    "object_11": [],
+    "object_8": [
       {
         "class_name": "StaticMeshComponent",
         "enabled": true,
         "data": {
-          "mesh_asset": "meshes/primitives/SM_Sphere.fbx",
-          "movability": "None",
-          "material": "None",
-          "transform": "None",
-          "bounds": "None"
+          "mesh_asset": "meshes/primitives/SM_Cube.fbx"
+        }
+      }
+    ],
+    "object_13": [
+      {
+        "class_name": "StaticMeshComponent",
+        "enabled": true,
+        "data": {
+          "mesh_asset": "meshes/primitives/SM_Cube.fbx"
         }
       }
     ],
@@ -880,55 +1198,6 @@
         }
       }
     ],
-    "object_5": [
-      {
-        "class_name": "StaticMeshComponent",
-        "enabled": true,
-        "data": {
-          "mesh_asset": "meshes/primitives/SM_Cube.fbx",
-          "movability": "None",
-          "material": "None",
-          "transform": "None",
-          "bounds": "None"
-        }
-      }
-    ],
-    "object_1": [
-      {
-        "class_name": "ScriptComponent",
-        "enabled": true,
-        "data": {
-          "script_asset": "src/classes/MyBP"
-        }
-      }
-    ],
-    "object_13": [
-      {
-        "class_name": "StaticMeshComponent",
-        "enabled": true,
-        "data": {
-          "mesh_asset": "meshes/primitives/SM_Cube.fbx"
-        }
-      }
-    ],
-    "object_7": [
-      {
-        "class_name": "StaticMeshComponent",
-        "enabled": true,
-        "data": {
-          "mesh_asset": "monkey.fbx"
-        }
-      }
-    ],
-    "object_12": [
-      {
-        "class_name": "StaticMeshComponent",
-        "enabled": true,
-        "data": {
-          "mesh_asset": "monkey.fbx"
-        }
-      }
-    ],
     "object_3": [
       {
         "class_name": "LightComponent",
@@ -946,11 +1215,105 @@
         }
       }
     ],
-    "object_11": []
+    "object_5": [
+      {
+        "class_name": "StaticMeshComponent",
+        "enabled": true,
+        "data": {
+          "mesh_asset": "meshes/primitives/SM_Cube.fbx",
+          "movability": "None",
+          "material": "None",
+          "transform": "None",
+          "bounds": "None"
+        }
+      }
+    ],
+    "object_12": [
+      {
+        "class_name": "StaticMeshComponent",
+        "enabled": true,
+        "data": {
+          "mesh_asset": "monkey.fbx"
+        }
+      }
+    ],
+    "object_7": [
+      {
+        "class_name": "StaticMeshComponent",
+        "enabled": true,
+        "data": {
+          "mesh_asset": "monkey.fbx"
+        }
+      }
+    ],
+    "object_1": [
+      {
+        "class_name": "ScriptComponent",
+        "enabled": true,
+        "data": {
+          "script_asset": "src/classes/MyBP"
+        }
+      }
+    ],
+    "object_2": [
+      {
+        "class_name": "LightComponent",
+        "enabled": true,
+        "data": {
+          "color": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "intensity": 7.0,
+          "range": 40.0,
+          "cast_shadows": false
+        }
+      },
+      {
+        "class_name": "ColliderDescriptor",
+        "enabled": true,
+        "data": {
+          "shape": "Box",
+          "offset": "unsupported",
+          "size": "unsupported",
+          "is_trigger": true
+        }
+      },
+      {
+        "class_name": "StaticMeshComponent",
+        "enabled": true,
+        "data": {
+          "mesh_asset": "meshes/primitives/SM_Sphere.fbx",
+          "movability": "None",
+          "material": "None",
+          "transform": "None",
+          "bounds": "None"
+        }
+      }
+    ],
+    "object_4": [
+      {
+        "class_name": "LightComponent",
+        "enabled": true,
+        "data": {
+          "color": [
+            0.9058823585510254,
+            0.09803923964500429,
+            0.35686275362968445,
+            1.0
+          ],
+          "intensity": 8.0,
+          "range": 10.0,
+          "cast_shadows": false
+        }
+      }
+    ]
   },
   "metadata": {
-    "created": "2026-05-28T16:00:28.904202+00:00",
-    "modified": "2026-05-28T16:00:28.904202+00:00",
+    "created": "2026-06-07T16:38:50.817667+00:00",
+    "modified": "2026-06-07T16:38:50.817667+00:00",
     "editor_version": "0.1.0"
   },
   "editor": {
@@ -960,8 +1323,8 @@
         27.804766,
         -7.2892895
       ],
-      "yaw": 4.347478,
-      "pitch": -0.60749996
+      "yaw": 4.802481,
+      "pitch": -0.73249984
     }
   }
 }

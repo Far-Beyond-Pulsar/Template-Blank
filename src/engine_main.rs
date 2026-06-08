@@ -7,7 +7,7 @@
 //! VM blueprints are auto-discovered from `src/classes/*/events/.build/bytecode.json`.
 
 use pulsar_game::prelude::*;
-use pulsar_game::blueprint_runtime::{BlueprintDispatcher, BlueprintEvent};
+use pulsar_game::blueprint_runtime::BlueprintDispatcher;
 use std::sync::{Arc, Mutex};
 
 /// Set up the level: spawn native actors and load VM-compiled blueprints.
@@ -60,14 +60,11 @@ pub fn setup(game: &mut TickLoop) -> Result<(), String> {
 
                     match dispatcher.register_instance(object_id.clone(), &build_path, None) {
                         Ok(()) => {
-                            // Fire begin_play immediately so the blueprint can initialise state.
-                            if let Err(e) = dispatcher.dispatch_event(
-                                BlueprintEvent::BeginPlay { object_id: object_id.clone() }
-                            ) {
-                                tracing::warn!(
-                                    "begin_play failed for VM blueprint '{class_name}': {e}"
-                                );
-                            }
+                            // `begin_play` is intentionally NOT fired here — `setup()` runs
+                            // before the primary window/GPU surface/scene exist. The
+                            // TickLoop dispatches it on the first tick (after the window is
+                            // open), so blueprint begin_play logic sees a ready world —
+                            // the same ordering native actors get from `ActorRegistry`.
                             vm_loaded += 1;
                             tracing::info!("VM blueprint loaded: {class_name} → {object_id}");
                         }

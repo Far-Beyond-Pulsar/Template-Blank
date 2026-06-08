@@ -15,24 +15,25 @@
       "blend_mode": "normal",
       "tile_size": 256,
       "tiles": {
-        "4_0": ".raster/layer_background_4_0.qoi",
-        "2_0": ".raster/layer_background_2_0.qoi",
-        "1_3": ".raster/layer_background_1_3.qoi",
-        "0_1": ".raster/layer_background_0_1.qoi",
-        "0_0": ".raster/layer_background_0_0.qoi",
-        "2_1": ".raster/layer_background_2_1.qoi",
-        "1_1": ".raster/layer_background_1_1.qoi",
-        "3_2": ".raster/layer_background_3_2.qoi",
-        "4_1": ".raster/layer_background_4_1.qoi",
         "0_2": ".raster/layer_background_0_2.qoi",
-        "1_0": ".raster/layer_background_1_0.qoi",
+        "0_1": ".raster/layer_background_0_1.qoi",
+        "4_0": ".raster/layer_background_4_0.qoi",
+        "1_1": ".raster/layer_background_1_1.qoi",
+        "0_0": ".raster/layer_background_0_0.qoi",
         "3_1": ".raster/layer_background_3_1.qoi",
-        "0_3": ".raster/layer_background_0_3.qoi",
-        "3_3": ".raster/layer_background_3_3.qoi",
-        "2_2": ".raster/layer_background_2_2.qoi",
+        "4_2": ".raster/layer_background_4_2.qoi",
+        "1_0": ".raster/layer_background_1_0.qoi",
+        "2_1": ".raster/layer_background_2_1.qoi",
+        "4_1": ".raster/layer_background_4_1.qoi",
         "1_2": ".raster/layer_background_1_2.qoi",
+        "2_3": ".raster/layer_background_2_3.qoi",
+        "3_2": ".raster/layer_background_3_2.qoi",
+        "3_3": ".raster/layer_background_3_3.qoi",
+        "1_3": ".raster/layer_background_1_3.qoi",
         "3_0": ".raster/layer_background_3_0.qoi",
-        "2_3": ".raster/layer_background_2_3.qoi"
+        "2_2": ".raster/layer_background_2_2.qoi",
+        "2_0": ".raster/layer_background_2_0.qoi",
+        "0_3": ".raster/layer_background_0_3.qoi"
       }
     },
     {
@@ -64,13 +65,13 @@
       "blend_mode": "normal",
       "tile_size": 256,
       "tiles": {
-        "2_1": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_2_1.qoi",
-        "3_0": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_3_0.qoi",
-        "2_0": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_2_0.qoi",
-        "1_0": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_1_0.qoi",
-        "1_1": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_1_1.qoi",
         "0_0": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_0_0.qoi",
-        "0_1": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_0_1.qoi"
+        "2_1": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_2_1.qoi",
+        "0_1": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_0_1.qoi",
+        "1_1": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_1_1.qoi",
+        "3_0": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_3_0.qoi",
+        "1_0": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_1_0.qoi",
+        "2_0": ".raster/layer_layer-a03af55b-6ec4-439d-b842-a49a6d363676_2_0.qoi"
       }
     },
     {
