@@ -1,11 +1,10 @@
 /target
 target/.rustc_info.json
 /.pulsar/
-!/.pulsar/project/*
-GameState/.DS_Store
 .DS_Store
-/target
-target/.rustc_info.json
-target/flycheck0/stderr
-target/flycheck0/stdout
+*/.DS_Store
 src/test
+
+
+!/.pulsar/project/*
+!/.pulsar/thumbnail.png
