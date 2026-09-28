@@ -1,0 +1,12 @@
+# User gameplay scripts for this Pulsar project. Generated once by the
+# Core Project Builder (#653); you own every line after that.
+[package]
+name = "test_scripts"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+# Same absolute path the generated game manifest uses for `pulsar_game`,
+# so both unify to ONE compiled copy of the engine runtime.
+pulsar_game = { path = "C:/Users/redst/OneDrive/Documents/GitHub/Pulsar-Native/crates/core/pulsar_game" }

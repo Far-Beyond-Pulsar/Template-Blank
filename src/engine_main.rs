@@ -4,93 +4,41 @@
 //! To prevent regeneration, remove the `@generated-by-pulsar-engine_main` marker.
 //!
 //! Native prefabs are controlled by `Pulsar/level.json`.
-//! VM blueprints are auto-discovered from `src/classes/*/events/.build/bytecode.json`.
+//! Gameplay script crates under `scripts/` are auto-discovered (#653).
+//! Script classes run on placed class instances; global scripts are listed in
+//! `Pulsar/scripting.json`.
 
 use pulsar_game::prelude::*;
-use pulsar_game::blueprint_runtime::BlueprintDispatcher;
-use std::sync::{Arc, Mutex};
 
-/// Set up the level: spawn native actors and load VM-compiled blueprints.
+/// Set up the level: spawn native actors, register gameplay script crates and
+/// enable the script driver.
 ///
 /// Called once from `main()` before `game.run_blocking()`.
-/// - Native actors are registered into `game.actors` and receive `tick` every frame.
-/// - VM blueprints are loaded into `game.blueprint_dispatcher`; the `TickLoop`
-///   dispatches `BlueprintEvent::Tick` to each instance after every frame.
+/// - Native actors + script-crate actors are registered into the tick loop's
+///   shared world and receive `tick` every frame (via `register_actor`, which
+///   also makes them hot-reload-safe in Play-In-Editor).
+/// - The script driver runs one script instance per placed class instance
+///   (and per global script); the `TickLoop` runs their events every frame.
 pub fn setup(game: &mut TickLoop) -> Result<(), String> {
     // ── Native actors (from Pulsar/level.json) ────────────────────────────────
     // No native prefabs configured — add entries to Pulsar/level.json.
 
-    // ── VM blueprint discovery ────────────────────────────────────────────────
+    // ── Gameplay script crates (scripts/) ──────────────────────────────
+// Each crate registers its actors through TickLoop::register_actor,
+// which stamps entity identities PIE hot reload re-binds to (#653).
+    // User gameplay crate `scripts/test_scripts`:
+    test_scripts::register_scripts(game)?;
+
+    // ── Script classes (engine script VM) ─────────────────────────────────────
     //
-    // Scan src/classes/*/events/.build/bytecode.json.
-    // Each file was written by the Blueprint Editor's BytecodeVm compile path.
-    // The function-pointer slots are zero here; BlueprintDispatcher::new() calls
-    // BpExecutor::prepare() which patches them from the embedded pulsar_std dylib.
-    let classes_dir = std::path::Path::new(env!("CARGO_MANIFEST_DIR"))
-        .join("src")
-        .join("classes");
-
-    if classes_dir.exists() {
-        match BlueprintDispatcher::new() {
-            Ok(mut dispatcher) => {
-                let mut vm_loaded: usize = 0;
-
-                let read_dir = std::fs::read_dir(&classes_dir)
-                    .map_err(|e| format!("Cannot read classes dir: {e}"))?;
-
-                for entry in read_dir.flatten() {
-                    if !entry.path().is_dir() {
-                        continue;
-                    }
-
-                    let build_path = entry
-                        .path()
-                        .join("events")
-                        .join(".build")
-                        .join("bytecode.json");
-
-                    if !build_path.exists() {
-                        continue;
-                    }
-
-                    let class_name = entry.file_name().to_string_lossy().into_owned();
-                    // Each VM class gets a single default instance.
-                    // For per-level multi-instance spawning, add support in level.json.
-                    let object_id = format!("{class_name}__vm_default");
-
-                    match dispatcher.register_instance(object_id.clone(), &build_path, None) {
-                        Ok(()) => {
-                            // `begin_play` is intentionally NOT fired here — `setup()` runs
-                            // before the primary window/GPU surface/scene exist. The
-                            // TickLoop dispatches it on the first tick (after the window is
-                            // open), so blueprint begin_play logic sees a ready world —
-                            // the same ordering native actors get from `ActorRegistry`.
-                            vm_loaded += 1;
-                            tracing::info!("VM blueprint loaded: {class_name} → {object_id}");
-                        }
-                        Err(e) => {
-                            tracing::warn!(
-                                "Failed to load VM blueprint '{class_name}': {e}"
-                            );
-                        }
-                    }
-                }
-
-                if vm_loaded > 0 {
-                    game.blueprint_dispatcher = Some(Arc::new(Mutex::new(dispatcher)));
-                    tracing::info!(
-                        "VM blueprint runtime active — {vm_loaded} class(es) loaded"
-                    );
-                } else {
-                    tracing::debug!("No VM blueprints found in {}",  classes_dir.display());
-                }
-            }
-            Err(e) => {
-                // Non-fatal: native actors still run without the VM runtime.
-                tracing::warn!("Could not initialise BlueprintDispatcher: {e}");
-            }
-        }
-    }
+    // The script driver follows the world: each placed class instance runs
+    // its class's script (src/classes/*/events/.build/module.json) bound to
+    // its object, from level load, Play-in-Editor placement or a script's
+    // world::spawn. No instance is created here, and a level without class
+    // instances runs no scripts. Global scripts: Pulsar/scripting.json.
+    // Classes and settings come from the game's content (the project in
+    // development, `Content/` when packaged), found at run time.
+    game.enable_project_scripting()?;
 
     Ok(())
 }

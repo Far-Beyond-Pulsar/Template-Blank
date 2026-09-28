@@ -1,0 +1,276 @@
+{
+  "prefab_version": 1,
+  "name": "Prefab",
+  "components": [
+    {
+      "slot_id": "73bdd481-ce3b-42d4-b216-6488bc54996a",
+      "class_name": "LightComponent",
+      "enabled": true,
+      "data": {
+        "enabled": true,
+        "affects_world": true,
+        "light_type": 1,
+        "light_channels": 255,
+        "lighting_channel_0": true,
+        "lighting_channel_1": false,
+        "lighting_channel_2": false,
+        "intensity": 1000.0,
+        "intensity_units": 1,
+        "exposure_compensation": 0.0,
+        "inverse_squared_falloff": true,
+        "indirect_intensity": 1.0,
+        "max_draw_distance": 0.0,
+        "max_distance_fade_range": 0.0,
+        "color": [
+          1.0,
+          0.0,
+          0.8325047492980957,
+          1.0
+        ],
+        "use_temperature": false,
+        "temperature_kelvin": 6500.0,
+        "temperature_tint": 0.0,
+        "color_saturation": 1.0,
+        "color_contrast": 1.0,
+        "use_physical_light_color": true,
+        "range": 1000.0,
+        "falloff_start": 0.0,
+        "attenuation_exponent": 2.0,
+        "source_radius": 0.0,
+        "source_length": 0.0,
+        "inner_cone_angle": 30.0,
+        "outer_cone_angle": 45.0,
+        "cast_shadows": true,
+        "cast_static_shadows": true,
+        "cast_dynamic_shadows": true,
+        "cast_volumetric_shadow": true,
+        "cast_contact_shadows": false,
+        "shadow_bias": 0.5,
+        "shadow_normal_bias": 0.5,
+        "shadow_slope_bias": 0.5,
+        "shadow_filter_sharpen": 0.0,
+        "shadow_softness": 1.0,
+        "shadow_resolution_scale": 1.0,
+        "contact_shadow_non_shadow_casting_intensity": 0.0,
+        "affects_volumetric_fog": true,
+        "volumetric_scattering_intensity": 1.0,
+        "volumetric_shadow_intensity": 1.0,
+        "fog_inscattering_intensity": 1.0,
+        "contact_shadow_length": 0.0,
+        "light_function_material": "",
+        "light_function_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "light_function_fade_distance": 0.0,
+        "light_function_disabled_brightness": 0.0,
+        "mobile_quality_level": 2,
+        "ray_tracing_inclusion": true,
+        "virtual_shadow_map_enabled": true,
+        "shadow_cache_mode": 0,
+        "per_view_visibility_mask": 65535,
+        "affects_translucency": true,
+        "affects_reflections": true,
+        "affects_global_illumination": true,
+        "specular_scale": 1.0,
+        "diffuse_scale": 1.0
+      }
+    }
+  ],
+  "blueprint_class": {
+    "class_path": "C:\\Users\\redst\\OneDrive\\Documents\\Pulsar\\test\\Test\\NewBlueprintClass.class",
+    "variable_defaults": {}
+  },
+  "script_graph": {
+    "nodes": {
+      "9080e025-af59-4b80-b548-3690cede8fd6": {
+        "id": "9080e025-af59-4b80-b548-3690cede8fd6",
+        "node_type": "native::LightComponent::set_enabled",
+        "position": {
+          "x": -6100.0,
+          "y": -3270.0
+        },
+        "properties": {},
+        "inputs": [
+          {
+            "id": "exec",
+            "name": "exec",
+            "pin_type": "Input",
+            "data_type": "Execution",
+            "connected_to": [
+              "4aa20539-4fd4-4571-adf8-830909d1da70"
+            ]
+          },
+          {
+            "id": "self",
+            "name": "self",
+            "pin_type": "Input",
+            "data_type": {
+              "Data": {
+                "base_type": "LightComponent",
+                "wrappers": [],
+                "is_wildcard": false
+              }
+            },
+            "connected_to": [
+              "30933c74-030c-4721-b519-a0ea27c3bb66"
+            ]
+          },
+          {
+            "id": "value",
+            "name": "value",
+            "pin_type": "Input",
+            "data_type": {
+              "Data": {
+                "base_type": "bool",
+                "wrappers": [],
+                "is_wildcard": false
+              }
+            },
+            "connected_to": [
+              "cc15b54b-8bf7-4a76-b543-84907ff50244"
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "exec_out",
+            "name": "exec_out",
+            "pin_type": "Output",
+            "data_type": "Execution",
+            "connected_to": []
+          }
+        ]
+      },
+      "get_component_node_92ebf2ad-b59f-4790-abf9-6fb53e0308e5": {
+        "id": "get_component_node_92ebf2ad-b59f-4790-abf9-6fb53e0308e5",
+        "node_type": "get_component_ref::LightComponent::0",
+        "position": {
+          "x": -6390.0,
+          "y": -3190.0
+        },
+        "properties": {
+          "component_index": 0.0,
+          "component_class": "LightComponent",
+          "slot_id": "73bdd481-ce3b-42d4-b216-6488bc54996a"
+        },
+        "inputs": [],
+        "outputs": [
+          {
+            "id": "component",
+            "name": "LightComponent",
+            "pin_type": "Output",
+            "data_type": {
+              "Data": {
+                "base_type": "LightComponent",
+                "wrappers": [],
+                "is_wildcard": false
+              }
+            },
+            "connected_to": [
+              "30933c74-030c-4721-b519-a0ea27c3bb66"
+            ]
+          }
+        ]
+      },
+      "dfd3fe2e-921c-47a8-a465-abed43c3808f": {
+        "id": "dfd3fe2e-921c-47a8-a465-abed43c3808f",
+        "node_type": "on_tick",
+        "position": {
+          "x": -6410.0,
+          "y": -3270.0
+        },
+        "properties": {},
+        "inputs": [
+          {
+            "id": "_delta_time",
+            "name": "_delta_time",
+            "pin_type": "Input",
+            "data_type": {
+              "Data": {
+                "base_type": "f32",
+                "wrappers": [],
+                "is_wildcard": false
+              }
+            },
+            "connected_to": []
+          }
+        ],
+        "outputs": [
+          {
+            "id": "Body",
+            "name": "Body",
+            "pin_type": "Output",
+            "data_type": "Execution",
+            "connected_to": [
+              "4aa20539-4fd4-4571-adf8-830909d1da70"
+            ]
+          }
+        ]
+      },
+      "d58e5c24-a1aa-4ba9-a79f-9758364016e6": {
+        "id": "d58e5c24-a1aa-4ba9-a79f-9758364016e6",
+        "node_type": "random_bool",
+        "position": {
+          "x": -6410.0,
+          "y": -3110.0
+        },
+        "properties": {},
+        "inputs": [],
+        "outputs": [
+          {
+            "id": "result",
+            "name": "result",
+            "pin_type": "Output",
+            "data_type": {
+              "Data": {
+                "base_type": "bool",
+                "wrappers": [],
+                "is_wildcard": false
+              }
+            },
+            "connected_to": [
+              "cc15b54b-8bf7-4a76-b543-84907ff50244"
+            ]
+          }
+        ]
+      }
+    },
+    "connections": [
+      {
+        "id": "30933c74-030c-4721-b519-a0ea27c3bb66",
+        "source_node": "get_component_node_92ebf2ad-b59f-4790-abf9-6fb53e0308e5",
+        "source_pin": "component",
+        "target_node": "9080e025-af59-4b80-b548-3690cede8fd6",
+        "target_pin": "self",
+        "connection_type": "Data"
+      },
+      {
+        "id": "4aa20539-4fd4-4571-adf8-830909d1da70",
+        "source_node": "dfd3fe2e-921c-47a8-a465-abed43c3808f",
+        "source_pin": "Body",
+        "target_node": "9080e025-af59-4b80-b548-3690cede8fd6",
+        "target_pin": "exec",
+        "connection_type": "Execution"
+      },
+      {
+        "id": "cc15b54b-8bf7-4a76-b543-84907ff50244",
+        "source_node": "d58e5c24-a1aa-4ba9-a79f-9758364016e6",
+        "source_pin": "result",
+        "target_node": "9080e025-af59-4b80-b548-3690cede8fd6",
+        "target_pin": "value",
+        "connection_type": "Data"
+      }
+    ],
+    "metadata": {
+      "name": "Blueprint Graph",
+      "description": "",
+      "version": "1.0.0",
+      "created_at": "2026-09-26T19:45:22.916007600+00:00",
+      "modified_at": "2026-09-26T19:45:22.916029600+00:00"
+    },
+    "comments": [],
+    "custom_event_defs": {}
+  }
+}
